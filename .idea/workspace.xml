@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:pr" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/objects.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bowerrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/app.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-bold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-bolditalic-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-italic-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/dist/preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/src/preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/less/_config.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/less/blocks/_general.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/less/blocks/example-block.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/less/main.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/_config.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/_config.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/example-block.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/example-block.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/styl/_config.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/styl/blocks/_general.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/styl/blocks/example-block.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/styl/main.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-bold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-bolditalic-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-italic-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/dist/preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22I160tU6gvqZ1Q1AWqG7G6T3RI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="" />
+      <created>1639510109102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639510109102</updated>
+      <workItem from="1639510110520" duration="8547000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639513984440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1639513984440" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1639510429351">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639510429351" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1639511157816">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639511157816" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1639510130268">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639510130268" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639515419320">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639515419320" />
+  </component>
+</project>

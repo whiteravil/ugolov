@@ -1,0 +1,76 @@
+a
+  text-decoration: none
+  outline: none !important
+
+button
+  outline: none !important
+
+section
+  position: relative
+  overflow: hidden
+  padding: 105px 0
+
+h1, .h1
+  line-height: 1.0935
+  margin-bottom: 53px
+  font-size: 64px
+  font-weight: bold
+
+h2, .h2
+  flex-grow: 1
+  margin-right: 30px
+  font-weight: bold
+  font-size: 46px
+  letter-spacing: 1px
+
+.wrapper
+  overflow: hidden
+  padding-top: 106px
+
+.container
+  padding: 0 50px
+  margin-left: auto
+  margin-right: auto
+  width: 1760px
+  max-width: 100%
+
+.btn
+  display: inline-block
+  position: relative
+  outline: none !important
+  white-space: nowrap
+  cursor: pointer
+  height: 40px
+  line-height: 40px
+  padding: 0 20px
+  +tr
+  border-radius: 5px
+  background-color: #3E4751
+  color: #fff
+  font-weight: 500
+  font-size: 12px
+  letter-spacing: 1px
+  text-transform: uppercase
+
+  &:hover
+    background-color: $accent
+    color: #fff
+
+.btn-with-icon
+  display: inline-flex
+  align-items: center
+
+  &:hover
+    .icon-arrow-right
+      transform: translateX(5px)
+
+  span
+    font-size: 16px
+    +tr
+    margin-left: 29px
+
+.section-title
+  display: flex
+  margin-bottom: 45px
+  .btn
+    margin-top: 15px

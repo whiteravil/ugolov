@@ -1,0 +1,129 @@
+.s-banners
+  padding: 0 0 56px
+
+.banners-block
+  position: relative
+  overflow: hidden
+  border-radius: 5px
+
+.banners
+  z-index: auto
+
+.banner
+  height: 705px
+  position: relative
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  padding: 53px 65px
+  color: #fff
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 0
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 57.41%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(0deg, rgba(25, 68, 132, 0.31), rgba(25, 68, 132, 0.31))
+
+.banner-content
+  position: relative
+  z-index: 1
+
+  .h1
+    max-width: 906px
+
+  p
+    max-width: 515px
+    line-height: 1.364
+    font-size: 22px
+    margin: 0
+
+.banners-nav-thumbs
+  position: absolute
+  display: flex
+  padding-right: 175px
+  padding-left: 30px
+  z-index: 1
+  justify-content: space-between
+  width: 100%
+  left: 0
+  bottom: 0
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 30px
+    right: 30px
+    height: 1px
+    background-color: rgba(#fff, .5)
+
+.banners-nav-thumb
+  position: relative
+  color: #fff
+  padding: 26px 30px 29px 0
+  cursor: pointer
+  display: flex
+  +tr
+  line-height: 1.167
+  font-size: 18px
+  width: 33.3333%
+  flex-shrink: 0
+  max-width: 380px
+
+  &.active
+    &:after
+      transform: scaleX(1)
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 7px
+    background-color: #fff
+    +tr
+    transform: scaleX(0)
+
+  span
+    line-height: 1
+    font-size: 40px
+    margin-right: 24px
+    font-weight: 100
+
+.banners-next,
+.banners-prev
+  position: absolute
+  bottom: 24px
+  right: 0
+  z-index: 2
+  font-size: 44px
+  color: #fff
+  +tr
+  display: flex
+  cursor: pointer
+
+  &:before
+    font-family: icon
+    line-height: 1
+    font-weight: normal
+
+  &.swiper-button-disabled
+    opacity: .6
+
+.banners-next
+  right: 30px
+
+  &:before
+    content: '\e901'
+
+.banners-prev
+  right: 104px
+
+  &:before
+    content: '\e900'

@@ -1,0 +1,76 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 5
+  background-color: #fff
+
+  &.fixed
+    &:after
+      opacity: 1
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 1px
+    width: 100%
+    background-color: #ebebeb
+    +tr
+    opacity: 0
+
+
+.header-row
+  display: flex
+  align-items: center
+  height: 106px
+
+.header-logo
+  margin-right: 93px
+
+.logo
+  img
+    display: block
+    width: 186px
+
+.header-menu
+  flex-grow: 1
+  margin-right: 30px
+
+.main-menu
+  display: flex
+  align-items: center
+
+  a
+    margin-right: 30px
+    color: $dark
+    +tr
+    font-size: 18px
+
+    &:hover
+      color: $accent
+
+    &:last-child
+      margin-right: 0
+
+.header-lang
+  display: flex
+  margin-right: 42px
+
+  a
+    font-size: 15px
+    +tr
+    color: $dark
+    margin-right: 20px
+
+    &:last-child
+      margin-right: 0
+
+    &:hover
+      color: $accent
+
+    &.active
+      font-weight: bold
+

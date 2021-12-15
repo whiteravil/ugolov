@@ -1,0 +1,52 @@
+$accent: #7CACF3
+$fontsize: 20px
+$text: #3E4751
+$dark: #2E373B
+$red: #DA3B19
+$orange: #F9A11C
+$green: #0CAC4C
+$blue: #1C74F9
+$lineheight: 1.5
+$userfont: Manrope, sans-serif
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+@import 'node_modules/swiper/swiper'
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Manrope', normal, 100, '../fonts/Manrope/Manrope-Thin.woff2')
+@include font('Manrope', normal, 300, '../fonts/Manrope/Manrope-Light.woff2')
+@include font('Manrope', normal, 400, '../fonts/Manrope/Manrope-Regular.woff2')
+@include font('Manrope', normal, 500, '../fonts/Manrope/Manrope-Medium.woff2')
+@include font('Manrope', normal, 600, '../fonts/Manrope/Manrope-Semibold.woff2')
+@include font('Manrope', normal, 700, '../fonts/Manrope/Manrope-Bold.woff2')
+
+@mixin tr()
+	-webkit-transition: all .3s ease
+	-moz-transition: all .3s ease
+	-ms-transition: all .3s ease
+	-o-transition: all .3s ease
+	transition: all .3s ease
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $text
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
