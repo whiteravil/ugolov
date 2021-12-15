@@ -1,0 +1,74 @@
+.s-services
+  background-color: #EFF3F9
+  padding: 98px 0 116px
+
+.services-header
+  display: flex
+  margin-bottom: 92px
+
+.services-header-left
+  width: 66%
+  flex-shrink: 0
+  padding-right: 30px
+
+  .h1
+    margin: 0
+    max-width: 811px
+
+.services-header-right
+  width: 34%
+  flex-shrink: 0
+
+  p
+    margin-bottom: 26px
+
+.services
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 20px
+
+.service
+  position: relative
+  overflow: hidden
+  height: 220px
+  +tr
+  padding: 30px 34px
+  border-radius: 5px
+  background-color: #fff
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+  &:hover
+    color: #fff
+    background-color: $accent
+
+    .service-icon
+      color: #fff
+
+.service-link
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+
+.service-icon
+  position: absolute
+  top: 25px
+  right: 25px
+  +tr
+  color: $accent
+  display: flex
+  span
+    font-size: 50px
+    &.icon-car
+      font-size: 66px
+      margin-top: -10px
+
+.service-title
+  font-size: 28px
+  font-weight: 600
+  line-height: 1.21
+  max-width: 500px

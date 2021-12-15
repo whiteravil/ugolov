@@ -15,60 +15,16 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pr" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/objects.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bowerrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/app.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-bold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-bolditalic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-italic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/roboto-regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/dist/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/src/preview.jpg" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/services.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/less/_config.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/less/blocks/_general.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/less/blocks/example-block.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/less/main.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/_config.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/_config.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/example-block.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/example-block.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/styl/_config.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/styl/blocks/_general.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/styl/blocks/example-block.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/styl/main.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-bold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-bolditalic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-italic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/roboto-regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639510109102</updated>
       <workItem from="1639510110520" duration="8547000" />
+      <workItem from="1639604865695" duration="1237000" />
     </task>
     <servers />
   </component>
@@ -115,6 +72,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639513984440">
