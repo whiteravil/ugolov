@@ -1,0 +1,39 @@
+.callback-block
+  display: flex
+  height: 100%
+  min-height: calc(var(--vh) * 100)
+
+.callback-sidebar
+  flex-shrink: 0
+  background-image: url(../images/dist/callback-sidebar-img.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  width: 273px
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(342.07deg, #272C3E 5.27%, #252E40 5.27%, rgba(40, 43, 61, 0) 34.15%)
+
+.callback-main
+  flex-grow: 1
+  padding: 79px 149px
+  display: flex
+  flex-direction: column
+
+.callback-form
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  max-width: 830px
+  color: #fff
+
+  .form-checkbox
+    margin-top: auto

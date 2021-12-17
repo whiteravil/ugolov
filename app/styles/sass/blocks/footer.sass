@@ -1,0 +1,90 @@
+.footer
+  background-color: #EFF3F9
+  padding: 49px 0
+
+.footer-row
+  display: flex
+  margin: 0 -10px
+
+  > *
+    flex-shrink: 0
+    padding: 0 10px
+
+.footer-main
+  width: 25%
+  display: flex
+  flex-direction: column
+
+.footer-logo
+  margin-bottom: 30px
+
+.footer-policy
+  margin-top: auto
+
+  a
+    color: $dark
+    opacity: .5
+    +tr
+    font-size: 16px
+
+    &:hover
+      opacity: 1
+
+.footer-nav
+  width: 16.66666%
+
+  nav
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+    a
+      margin-bottom: 26px
+      font-size: 22px
+      color: $dark
+      +tr
+
+      &:hover
+        color: $accent
+
+      &:last-child
+        margin-bottom: 0
+
+.footer-contacts
+  margin-left: auto
+  width: 25%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  .soc
+    margin-top: auto
+
+.footer-contacts-link
+  margin-bottom: 24px
+  font-weight: 600
+  font-size: 28px
+  color: $text
+  +tr
+
+  &.mail
+    text-decoration: underline
+
+  &:hover
+    color: $accent
+
+.soc
+  display: flex
+  align-items: center
+
+.soc-link
+  font-size: 32px
+  margin-right: 50px
+  +tr
+  color: $accent
+
+  &:hover
+    color: $text
+
+  &:last-child
+    margin-right: 0

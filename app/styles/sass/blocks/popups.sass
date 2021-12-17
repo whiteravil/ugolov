@@ -1,0 +1,55 @@
+.popup-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 10
+  background-image: url(../images/dist/popup-bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  transition: all .4s ease
+  opacity: 0
+  transform: scale(1.05)
+  display: none
+
+  &.opened
+    opacity: 1
+    transform: scale(1)
+
+.popup-block
+  width: 100%
+  height: 100%
+  overflow-y: auto
+
+.popup-close
+  position: absolute
+  width: 48px
+  height: 48px
+  top: 28px
+  right: 26px
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  +tr
+  font-size: 14px
+  color: #fff
+  border: 1px solid rgba(#fff, .4)
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &:hover
+    transform: rotate(90deg)
+
+  &:before
+    content: '\e90a'
+    font-family: icon
+    font-weight: normal
+    line-height: 1
+
+.popup-content
+  min-height: calc(var(--vh) * 100)

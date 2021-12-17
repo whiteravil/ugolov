@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon';
-  src:  url('../fonts/Icons/icomoon.eot?o60qzs');
-  src:  url('../fonts/Icons/icomoon.eot?o60qzs#iefix') format('embedded-opentype'),
-  url('../fonts/Icons/icomoon.ttf?o60qzs') format('truetype'),
-  url('../fonts/Icons/icomoon.woff?o60qzs') format('woff'),
-  url('../fonts/Icons/icomoon.svg?o60qzs#icomoon') format('svg');
+  src:  url('../fonts/Icons/icomoon.eot?hjmc25');
+  src:  url('../fonts/Icons/icomoon.eot?hjmc25#iefix') format('embedded-opentype'),
+  url('../fonts/Icons/icomoon.ttf?hjmc25') format('truetype'),
+  url('../fonts/Icons/icomoon.woff?hjmc25') format('woff'),
+  url('../fonts/Icons/icomoon.svg?hjmc25#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+  content: "\e90a";
+}
+.icon-checkmark:before {
+  content: "\e90b";
+}
+.icon-checkmark-big:before {
+  content: "\e90c";
+}
 .icon-arrow-left:before {
   content: "\e900";
 }
