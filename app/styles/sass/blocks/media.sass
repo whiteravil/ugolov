@@ -1,0 +1,814 @@
+@media (max-width: 1599.98px)
+  body
+    font-size: 16px
+
+  .container
+    padding: 0 30px
+
+  .header-row
+    height: 80px
+
+  .header-logo
+    margin-right: 40px
+
+  .main-menu
+    a
+      font-size: 14px
+      margin-right: 20px
+
+  .wrapper
+    padding-top: 80px
+
+  h1, .h1
+    font-size: 48px
+
+  h2, .h2
+    font-size: 36px
+
+  .banner
+    height: 655px
+
+  section
+    padding: 70px 0
+
+  .object-title
+    font-size: 24px
+
+  .service-title
+    font-size: 24px
+
+  .news-title
+    font-size: 24px
+
+  .invest-more-link
+    padding: 0 70px
+
+  .footer-nav
+    nav
+      a
+        font-size: 16px
+
+  .footer-contacts-link
+    font-size: 21px
+
+  .soc-link
+    font-size: 25px
+
+  .news-content
+    min-height: 470px
+
+  .checkbox
+    span
+      &:after
+        top: 3px
+
+      &:before
+        top: 7px
+
+  .form-success-title-icon
+    width: 45px
+    height: 45px
+    font-size: 16px
+    top: 3px
+
+  .form-success
+    p
+      font-size: 20px
+
+@media (max-width: 1365.98px)
+  h1, .h1
+    font-size: 40px
+
+  h2, .h2
+    font-size: 30px
+
+  .logo
+    img
+      width: 130px
+
+  .header-logo
+    margin-right: 30px
+
+  .header-lang
+    margin-right: 30px
+
+    a
+      font-size: 14px
+      margin-right: 15px
+
+  .banners-nav-thumb
+    font-size: 16px
+
+    span
+      margin-right: 15px
+      font-size: 36px
+
+  .s-banners
+    padding-bottom: 35px
+
+  .s-our-objects
+    padding: 35px 0 70px
+
+  .s-services
+    padding: 70px 0
+
+  .services-header-left
+    width: 55%
+
+  .services-header-right
+    width: 45%
+
+  .service
+    padding: 25px
+
+  .service-title
+    font-size: 21px
+
+  .service-icon
+    span
+      font-size: 30px
+
+      &.icon-car
+        font-size: 46px
+        margin-top: -8px
+
+  .s-our-clients
+    padding: 70px 0 35px
+
+  .our-clients
+    padding: 40px
+
+  .section-title
+    margin-bottom: 35px
+
+  .our-clients
+    .section-title
+      margin-bottom: 35px
+
+  .slider-next,
+  .slider-prev
+    font-size: 20px
+    bottom: calc(100% + 48px)
+
+  .s-news
+    padding: 35px 0 70px
+
+  .news-slider
+    .slider-next,
+    .slider-prev
+      bottom: calc(100% + 60px)
+
+  .news-date
+    font-size: 24px
+
+    span
+      font-size: 40px
+
+  .s-invest
+    padding: 70px 0
+
+  .section-title-row
+    margin-bottom: 40px
+
+  .invest-more-link
+    height: 140px
+    padding: 0 50px
+    font-size: 30px
+
+    span
+      font-size: 45px
+
+  .banners-next,
+  .banners-prev
+    font-size: 28px
+    bottom: 32px
+
+  .banners-prev
+    right: 81px
+
+  .banners-nav-thumbs
+    padding-right: 128px
+
+  .form-success-title-icon
+    top: -1px
+
+@media (max-width: 1199.98px)
+  .header-logo
+    position: relative
+    z-index: 1
+
+  .header-lang
+    position: relative
+    z-index: 1
+
+  .header-menu
+    position: fixed
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: #EFF3F9
+    padding: 86px 18px 37px
+    max-width: 375px
+    margin: 0
+    overflow-y: auto
+    display: flex
+    flex-direction: column
+    transform: translateX(100%)
+    transition: transform .4s ease
+    z-index: 2
+
+    &.opened
+      transform: translateX(0)
+
+
+  .main-menu
+    flex-direction: column
+    margin-bottom: 28px
+    align-items: flex-start
+    flex-grow: 1
+
+    a
+      font-size: 18px
+      margin: 0 0 28px
+
+  .mob-menu-footer
+    display: block
+
+    .footer-contacts-link
+      font-size: 20px
+      margin-bottom: 5px
+      line-height: 1.8
+      display: block
+
+    .soc
+      margin-top: 13px
+
+    .soc-link
+      font-size: 22px
+      margin: 0 12px 0 0
+
+    .btn
+      margin-top: 28px
+
+  .header-lang
+    margin-left: auto
+
+    a
+      margin-right: 10px
+      font-size: 12px
+
+  .header-menu-btn
+    display: block
+    margin-left: 20px
+    width: 28px
+    height: 28px
+    position: relative
+    line-height: 1
+    z-index: 3
+
+    &.active
+      &:before
+        opacity: 0
+        transform: scale(0)
+
+      &:after
+        opacity: 1
+        transform: scale(1)
+
+    &:before
+      content: '\e90d'
+      font-size: 28px
+      font-family: icon
+      font-weight: normal
+      color: $text
+      +tr
+      position: absolute
+      top: 0
+      left: 0
+
+    &:after
+      content: '\e90a'
+      font-family: icon
+      font-size: 10px
+      width: 28px
+      height: 28px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: normal
+      border: 1px solid rgba(#2E373B, .4)
+      position: absolute
+      top: 0
+      left: 0
+      +tr
+      opacity: 0
+      transform: scale(0)
+
+  .banner
+    padding: 40px
+    height: 500px
+
+  .h1, h1
+    margin-bottom: 30px
+
+  .banners-nav-thumbs
+    .swiper-slide-next
+      & + .swiper-slide
+        opacity: 0
+
+  .object-title
+    font-size: 18px
+
+  .callback-sidebar
+    width: 150px
+
+  .callback-main
+    padding: 50px 85px 50px 50px
+
+  .form-success-title-icon
+    position: static
+    margin: 0 0 20px
+
+@media (max-width: 991.98px)
+  .container
+    padding: 0 20px
+
+  .our-objects
+    grid-template-columns: 1fr 1fr
+
+  .services-header
+    display: block
+    margin-bottom: 30px
+
+  .services-header-left
+    width: 100%
+    padding: 0
+    margin-bottom: 20px
+
+  .services-header-right
+    width: 100%
+
+  .section-title-row
+    margin-bottom: 30px
+    display: block
+
+  .section-title-left
+    width: 100%
+    padding: 0
+    margin-bottom: 20px
+
+  .section-title-right
+    width: 100%
+
+  .invest-more-link
+    padding: 0 30px
+    font-size: 18px
+    height: 80px
+
+    span
+      font-size: 30px
+
+  .footer-row
+    flex-wrap: wrap
+
+  .footer
+    position: relative
+    padding: 45px 0 65px
+
+  .footer-main
+    width: 100%
+
+  .footer-policy
+    position: absolute
+    bottom: 20px
+    left: 20px
+
+    a
+      font-size: 16px
+
+  .footer-nav
+    width: 33.33333%
+
+  .footer-contacts
+    width: 33.33333%
+
+@media (max-width: 767.98px)
+  body
+    font-size: 12px
+
+  .banner
+    padding: 19px 23px
+
+  h1, .h1
+    font-size: 22px
+    margin-bottom: 14px
+
+  h2, .h2
+    font-size: 18px
+    margin-bottom: 19px
+
+  .banner-content
+    p
+      font-size: 12px
+
+  .banner
+    height: 407px
+
+  .banners-nav-thumbs
+    padding-right: 70px
+
+    .swiper-slide-next
+      opacity: 0
+
+  .banners-nav-thumb
+    padding: 12px 0
+    font-size: 12px
+
+    span
+      font-size: 30px
+      margin-right: 12px
+
+    &:after
+      height: 2px
+
+  .banners-prev,
+  .banners-next
+    font-size: 22px
+    bottom: 17px
+
+  .banners-next
+    right: 21px
+
+  .banners-prev
+    right: 56px
+
+  .section-title
+    align-items: center
+
+    .btn
+      margin: 0
+
+  .section-title
+    margin-bottom: 10px
+
+  .services
+    grid-template-columns: 1fr
+
+  .news-slider
+    padding-right: 133px
+
+  .footer-nav
+    width: 50%
+
+  .footer-contacts
+    width: 100%
+    margin-top: 50px
+
+  .callback-sidebar
+    width: 41px
+
+  .callback-main
+    padding: 82px 37px 40px 34px
+
+  .form-title
+    .h6
+      font-size: 12px
+      margin-bottom: 10px
+
+  .banners-nav-thumb
+    max-width: 240px
+
+    &:after
+      display: none
+
+  .banners-nav-thumbs
+    &:after
+      background-color: #fff
+      height: 2px
+
+  .checkbox
+    span
+      &:after
+        top: 0
+
+      &:before
+        top: 4px
+
+@media (max-width: 575.98px)
+  .header-row
+    height: 51px
+
+  .logo
+    img
+      width: 114px
+
+  .header-callback
+    display: none
+
+  .header-menu
+    max-width: none
+    z-index: 0
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    padding-bottom: 0
+    padding-top: 51px
+
+    &:after
+      content: ''
+      left: 20px
+      right: 20px
+      height: 1px
+      background-color: rgba($dark, .2)
+      position: absolute
+      top: 50px
+
+    .header-menu-container
+      overflow-y: auto
+      flex-grow: 1
+      padding: 39px 0 37px
+
+  .header-logo
+    position: relative
+    z-index: 1
+
+  .header-lang
+    margin-right: 45px
+
+  .header-menu-btn
+    margin-left: 0
+
+  .main-menu
+    a
+      margin-bottom: 19px
+
+  .wrapper
+    padding-top: 51px
+
+  .banners-nav-thumbs
+    padding-left: 24px
+
+    &:after
+      left: 24px
+      right: 24px
+
+  .s-banners
+    padding-bottom: 15px
+
+  .s-our-objects
+    padding-top: 15px
+
+  .section-title
+    .btn
+      display: none
+
+  .our-objects
+    grid-template-columns: 1fr
+    grid-gap: 5px
+
+  .our-objects-all
+    display: block
+    margin-top: 10px
+
+  .object
+    height: 145px
+    min-height: 0 !important
+    padding: 12px 14px
+
+  .object-title
+    font-size: 16px
+    margin-bottom: 8px
+
+  .stick
+    height: 20px
+    font-size: 12px
+
+    &:before
+      font-size: 11px
+
+  .btn-block
+    padding: 0 12px
+
+  .s-our-objects
+    padding-bottom: 43px
+
+  .s-services
+    padding: 34px 0
+
+  .services-header
+    margin-bottom: 25px
+
+  .services-header-right
+    p
+      letter-spacing: 1px
+
+    .btn
+      display: none
+
+  .services
+    grid-gap: 5px
+
+  .service
+    padding: 12px
+    height: 104px
+
+  .service-title
+    font-size: 16px
+
+  .service-icon
+    top: 14px
+    right: 17px
+    font-size: 26px
+
+    span
+      font-size: 26px
+
+      &.icon-car
+        font-size: 34px
+
+  .s-our-clients
+    padding: 30px 0
+
+  .our-clients
+    padding: 23px 13px 29px
+
+    .section-title
+      margin-bottom: 30px
+
+  .clients
+    .swiper-slide
+      width: auto
+      max-width: 91px
+      max-height: 36px
+
+  .client
+    max-width: 91px
+    max-height: 36px
+    min-height: 0
+    opacity: 1 !important
+
+    img
+      max-height: 36px
+
+  .slider-prev
+    width: 28px
+    height: 28px
+    border: 1px solid rgba($dark, .2)
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    bottom: calc(100% + 28px)
+    right: 43px
+
+    &:before
+      content: '\e90e'
+      font-size: 11px
+      color: rgba($dark, .5)
+
+  .slider-next
+    width: 36px
+    height: 36px
+    border: 1px solid rgba($dark, .2)
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    bottom: calc(100% + 25px)
+
+    &:before
+      content: '\e90f'
+      font-size: 11px
+      color: rgba($dark, .5)
+
+  .s-news
+    padding: 30px 0 64px
+
+  .s-news
+    .section-title
+      margin-bottom: 19px
+      padding-bottom: 0
+      border-bottom: none
+
+  .tabs-nav
+    margin-bottom: 27px
+
+    a
+      height: 21px
+      padding: 0 5px
+      font-size: 11px
+      line-height: 19px
+      margin-right: 3px
+
+  .news-slider
+    .slider-next
+      bottom: calc(100% + 20px)
+
+    .slider-prev
+      bottom: calc(100% + 23px)
+
+  .news-content
+    padding: 10px
+    min-height: 232px
+
+  .news-date
+    font-size: 16px
+
+    span
+      font-size: 24px
+      line-height: .8
+
+  .news-title
+    padding-top: 12px
+    font-size: 16px
+    line-height: 1.125
+    margin-bottom: 13px
+
+  .news-descr
+    font-size: 12px
+    line-height: 1.167
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+    overflow: hidden
+
+  .s-invest
+    padding: 26px 0 41px
+
+  .section-title-right
+    p
+      letter-spacing: 1px
+
+  .invest-more-link
+    height: 72px
+    padding: 0 25px 0 22px
+    line-height: 1.1
+
+    span
+      font-size: 29px
+
+  .footer
+    padding: 45px 0 70px
+
+  .footer-logo
+    margin-bottom: 29px
+    padding-bottom: 22px
+    border-bottom: 1px solid rgba($dark, .3)
+
+    .logo
+      img
+        width: 186px
+
+  .footer-contacts
+    .btn
+      display: inline-flex
+      margin-bottom: 13px
+
+    .soc
+      margin-top: 15px
+
+  .footer-contacts-link
+    font-size: 20px
+    margin-bottom: 12px
+
+  .soc-link
+    font-size: 22px
+    margin-right: 12px
+
+  .form-title
+    margin-bottom: 38px
+
+    br
+      display: none
+
+  .form-col
+    width: 100%
+
+  .form-group
+    margin-bottom: 10px
+
+  .btn-lg
+    height: 40px
+    padding: 0 20px
+    line-height: 40px
+
+  .popup-close
+    width: 42px
+    height: 42px
+    top: 8px
+    right: 18px
+    font-size: 12px
+    color: rgba(#FDFDFD, .6)
+
+  .form-success-title-icon
+    width: 22px
+    height: 22px
+    margin-bottom: 19px
+    font-size: 11px
+
+  .form-success
+    p
+      font-size: 12px
+      margin-bottom: 26px

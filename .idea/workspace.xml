@@ -23,21 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/parts/popups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/callback.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/clients.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/invest.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/news.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/popups.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/media.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/dist/icomoon/car.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
@@ -45,7 +37,14 @@
       <change beforePath="$PROJECT_DIR$/app/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/clients.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/clients.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/objects.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/objects.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +62,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Goodbay/Работа/making-cash" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\white\OneDrive\Рабочий стол\ugolov\app\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\white\OneDrive\Рабочий стол\ugolov\app\styles\sass\blocks" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\white\OneDrive\Рабочий стол\ugolov\app\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +85,9 @@
       <updated>1639510109102</updated>
       <workItem from="1639510110520" duration="8547000" />
       <workItem from="1639604865695" duration="1278000" />
-      <workItem from="1639684080911" duration="10525000" />
+      <workItem from="1639684080911" duration="11148000" />
+      <workItem from="1639841722339" duration="13096000" />
+      <workItem from="1639912791550" duration="408000" />
     </task>
     <servers />
   </component>
@@ -114,10 +115,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639510429351" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1639696810404">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1639912820306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639696810404" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1639912820306" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639860060358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1639860060358" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1639860284440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639860284440" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1639696626917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

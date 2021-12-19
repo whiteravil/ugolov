@@ -5,6 +5,7 @@
   position: relative
   overflow: hidden
   border-radius: 5px
+  -webkit-mask-image: -webkit-radial-gradient(white, black)
 
 .banners
   z-index: auto
@@ -62,6 +63,16 @@
     height: 1px
     background-color: rgba(#fff, .5)
 
+  .swiper-slide
+    +tr
+    opacity: 1
+    &.swiper-slide-visible
+      opacity: 1
+
+  .swiper-slide-next
+    + .swiper-slide ~ .swiper-slide
+      opacity: 0
+
 .banners-nav-thumb
   position: relative
   color: #fff
@@ -71,7 +82,7 @@
   +tr
   line-height: 1.167
   font-size: 18px
-  width: 33.3333%
+  //width: 33.3333%
   flex-shrink: 0
   max-width: 380px
 

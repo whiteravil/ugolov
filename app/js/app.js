@@ -1,5 +1,5 @@
 import Swiper, { Navigation } from 'swiper'
-import data from "bootstrap/js/src/dom/data";
+import IMask from 'imask'
 
 Swiper.use([Navigation])
 
@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bannersBlock.forEach(bannerBlock => {
         const banners = bannerBlock.querySelector('.banners')
-        const bannersNavThumbs = bannerBlock.querySelectorAll('.banners-nav-thumb')
+        const bannersNavThumbs = bannerBlock.querySelector('.banners-nav-thumbs')
+        const bannersNavThumb = bannerBlock.querySelectorAll('.banners-nav-thumb')
         const bannersNavPrev = bannerBlock.querySelector('.banners-prev')
         const bannersNavNext = bannerBlock.querySelector('.banners-next')
 
@@ -45,28 +46,47 @@ document.addEventListener('DOMContentLoaded', () => {
             navigation: {
                 prevEl: bannersNavPrev,
                 nextEl: bannersNavNext
-            },
+            }
         })
 
-        bannersNavThumbs.forEach((navItem, navIndex) => {
+        const bannersNavThumbsSwiper = new Swiper(bannersNavThumbs, {
+            slidesPerView: 3,
+            speed: 800,
+            allowTouchMove: false,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1200: {
+                    slidesPerView: 3
+                }
+            }
+        })
+
+        bannersNavThumb.forEach((navItem, navIndex) => {
             navItem.addEventListener('click', e => {
                 if (!navItem.classList.contains('active')) {
-                    bannersNavThumbs.forEach(item => item.classList.remove('active'))
+                    bannersNavThumb.forEach(item => item.classList.remove('active'))
                     navItem.classList.add('active')
-                    banners.swiper.slideTo(navIndex)
+                    bannersSwiper.slideTo(navIndex)
                 }
             })
         })
 
         banners.swiper.on('slideChange', () => {
             const index = banners.swiper.activeIndex
-            bannersNavThumbs.forEach((navItem, navIndex) => {
-                if (index === navIndex) {
-                    navItem.classList.add('active')
+            bannersNavThumbsSwiper.slideTo(index)
+            bannersNavThumb.forEach((item, thumbIndex) => {
+                if (thumbIndex === index) {
+                    item.classList.add('active')
                 } else {
-                    navItem.classList.remove('active')
+                    item.classList.remove('active')
                 }
             })
+            navItem.classList.add('active')
         })
     })
 
@@ -84,7 +104,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 prevEl: prevNav,
                 nextEl: nextNav
             },
-            watchSlidesProgress: true
+            watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 14
+                },
+                576: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                768: {
+                    slidesPerView: 5
+                }
+            }
         })
     })
 
@@ -133,7 +166,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 prevEl: prevNav,
                 nextEl: nextNav
             },
-            watchSlidesProgress: true
+            watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1200: {
+                    slidesPerView: 3
+                }
+            }
         })
     })
 
@@ -209,4 +253,30 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('form .invalid').forEach(success => success.classList.remove('invalid'))
     }
 
+    const mobMenu = document.querySelector('.header-menu')
+    const mobMenuBtn = document.querySelector('.header-menu-btn')
+
+    mobMenuBtn.addEventListener('click', () => {
+        mobMenuBtn.classList.toggle('active')
+        mobMenu.classList.toggle('opened')
+    })
+
+    function closeMobMenu () {
+        mobMenuBtn.classList.remove('active')
+        mobMenu.classList.remove('opened')
+    }
+
+    document.addEventListener('click', e => {
+        const tg = e.target
+        if (!tg.closest('.header-menu') && !tg.closest('.header-menu-btn')) {
+            closeMobMenu()
+        }
+    })
+
+    const phone = document.querySelectorAll('.phone-mask')
+    phone.forEach(phoneItem => {
+        const phoneMask = IMask(phoneItem, {
+            mask: '+{7}(000)000-00-00'
+        })
+    })
 })
