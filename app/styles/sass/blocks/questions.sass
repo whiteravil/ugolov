@@ -1,0 +1,49 @@
+.s-questions
+  padding: 103px 0
+  background-image: url(../images/dist/questions-bg.jpg)
+  background-repeat: no-repeat
+  background-position: center
+  color: #fff
+
+.questions
+  display: flex
+  align-items: center
+
+.questions-left
+  flex-grow: 1
+  margin-right: 30px
+
+  .h1
+    margin-bottom: 38px
+
+  p
+    margin: 0
+    font-size: 28px
+    line-height: 1.357
+    opacity: .5
+    max-width: 792px
+
+.questions-link
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 230px
+  height: 230px
+  border: 1px solid #FFFFFF
+  flex-shrink: 0
+  color: #fff
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  +tr
+
+  &:hover
+    border-color: $accent
+    color: $accent
+
+  &:before
+    content: '\e911'
+    font-family: icon
+    font-weight: normal
+    line-height: 1
+    font-size: 66px

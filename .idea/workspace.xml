@@ -23,28 +23,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/media.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/parts/popups/callback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/parts/popups/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/parts/questions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/catalog.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/gallery.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/product.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/questions.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/Icons/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/Icons/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/dist/brands/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/dist/brands/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/dist/brands/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/dist/brands/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/dist/brands/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/dist/brands/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/dist/brands/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/dist/brands/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/dist/brands/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/dist/brands/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/dist/objects/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/dist/objects/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/src/brands/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/src/brands/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/src/brands/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/src/brands/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/src/brands/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/src/brands/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/src/brands/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/src/brands/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/src/brands/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/src/brands/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/src/objects/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/src/objects/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parts/popups.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/clients.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/clients.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/objects.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/objects.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/invest.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/invest.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +102,8 @@
       <workItem from="1639604865695" duration="1278000" />
       <workItem from="1639684080911" duration="11148000" />
       <workItem from="1639841722339" duration="13096000" />
-      <workItem from="1639912791550" duration="408000" />
+      <workItem from="1639912791550" duration="630000" />
+      <workItem from="1639921587426" duration="14003000" />
     </task>
     <servers />
   </component>
@@ -107,10 +123,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639695000165">
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639946855682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1639695000165" />
+    <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1639946855682" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1639510429351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -123,17 +139,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1639860060358" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1639860284440">
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1639945892728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639860284440" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1639696626917">
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639945892728" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1639946772894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639696626917" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639695657719">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639946772894" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639933730868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639695657719" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639933730868" />
   </component>
 </project>

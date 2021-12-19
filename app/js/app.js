@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
 
-        banners.swiper.on('slideChange', () => {
-            const index = banners.swiper.activeIndex
+        bannersSwiper.on('slideChange', () => {
+            const index = bannersSwiper.activeIndex
             bannersNavThumbsSwiper.slideTo(index)
             bannersNavThumb.forEach((item, thumbIndex) => {
                 if (thumbIndex === index) {
@@ -266,17 +266,99 @@ document.addEventListener('DOMContentLoaded', () => {
         mobMenu.classList.remove('opened')
     }
 
-    document.addEventListener('click', e => {
-        const tg = e.target
-        if (!tg.closest('.header-menu') && !tg.closest('.header-menu-btn')) {
-            closeMobMenu()
-        }
-    })
-
     const phone = document.querySelectorAll('.phone-mask')
+    const number = document.querySelectorAll('.number-mask')
+
     phone.forEach(phoneItem => {
         const phoneMask = IMask(phoneItem, {
             mask: '+{7}(000)000-00-00'
         })
     })
+
+    number.forEach(numberItem => {
+        const numberMask = IMask(numberItem, {
+            mask: Number
+        })
+    })
+
+    const filters = document.querySelectorAll('.catalog-filter-item')
+
+    filters.forEach((filter, index) => {
+        const title = filter.querySelector('.catalog-filter-title')
+        const dropdown = filter.querySelector('.catalog-filter-dropdown')
+
+        title.addEventListener('click', () => {
+            filters.forEach((item, itemIndex) => {
+                if (itemIndex !== index) {
+                    item.classList.remove('opened')
+                } else {
+                    item.classList.toggle('opened')
+                }
+            })
+        })
+    })
+
+    const filterBtn = document.querySelectorAll('.filter-mob-btn')
+    const filter = document.querySelector('.catalog-filter')
+    const filterCloseBtn = document.querySelectorAll('.catalog-filter-mob-close')
+
+    filterBtn.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault()
+            filter.classList.toggle('opened')
+        })
+    })
+
+    filterCloseBtn.forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+            filter.classList.remove('opened')
+        })
+    })
+
+    const gallery = document.querySelectorAll('.gallery-slider')
+
+    gallery.forEach(galleryItem => {
+        const prev = galleryItem.querySelector('.gallery-prev')
+        const next = galleryItem.querySelector('.gallery-next')
+        const counter = galleryItem.querySelector('.gallery-pagination-counter')
+        const slidesLength = galleryItem.querySelectorAll('.gallery-slider-img').length
+
+        const gallerySlider = new Swiper(galleryItem, {
+            slidesPerView: 1,
+            speed: 800,
+            centeredSlides: true,
+            spaceBetween: 119,
+            navigation: {
+                prevEl: prev,
+                nextEl: next
+            }
+        })
+
+        counter.innerHTML = `1/${slidesLength}`
+
+        gallerySlider.on('slideChange', () => {
+            const index = gallerySlider.activeIndex
+            counter.innerHTML = `${index + 1}/${slidesLength}`
+        })
+
+    })
+
+
+
+
+
+
+    document.addEventListener('click', e => {
+        const tg = e.target
+        if (!tg.closest('.header-menu') && !tg.closest('.header-menu-btn')) {
+            closeMobMenu()
+        }
+        if (!tg.closest('.catalog-filter-item')) {
+            filters.forEach(item => item.classList.remove('opened'))
+        }
+        if (!tg.closest('.catalog-filter') && !tg.closest('.filter-mob-btn')) {
+            filter.classList.remove('opened')
+        }
+    })
+
 })

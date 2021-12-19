@@ -10,6 +10,11 @@ section
   overflow: hidden
   padding: 105px 0
 
+input, textarea
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
 h1, .h1
   line-height: 1.0935
   margin-bottom: 53px
@@ -189,3 +194,55 @@ h2, .h2
 .invest-more-link
   a
     display: block
+
+.s-breadcrumbs
+  margin: 11px 0 58px
+
+.breadcrumbs
+  display: flex
+  align-items: center
+  letter-spacing: 1px
+  font-size: 12px
+  color: $text
+
+  &:after
+    content: ''
+    flex-grow: 1
+    height: 1px
+    background-color: #E8EAEE
+    margin-left: 23px
+
+  a
+    position: relative
+    margin-right: 15px
+    color: inherit
+    +tr
+
+    &:after
+      content: '\e90f'
+      font-weight: normal
+      font-family: icon
+      line-height: 1
+      position: absolute
+      top: 5px
+      right: -12px
+      font-size: 7px
+      color: $text
+
+    &:hover
+      color: $accent
+
+
+.page-title
+  margin-bottom: 53px
+
+  .container
+    display: flex
+    align-items: center
+
+    .h1, h1
+      flex-grow: 1
+      margin: 0
+
+      &:not(:last-child)
+        margin-right: 30px

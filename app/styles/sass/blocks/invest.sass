@@ -18,13 +18,31 @@
   font-size: 34px
   font-weight: bold
   letter-spacing: 1px
-  color: #fff
+  color: #fff !important
   justify-content: space-between
   +tr
+  position: relative
+  z-index: 1
+  overflow: hidden
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $accent
+    z-index: -1
+    transform-origin: top left
+    transform: scaleX(0)
+    transition: all .4s ease
 
   &:hover
     border-color: $accent
-    color: $accent
+
+    &:after
+      transform: scaleX(1)
 
     span
       transform: translateX(20px)

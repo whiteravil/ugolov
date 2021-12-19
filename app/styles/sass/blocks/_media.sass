@@ -75,6 +75,35 @@
     p
       font-size: 20px
 
+  .s-catalog
+    padding: 0 0 70px
+
+  .page-title
+    margin-bottom: 25px
+
+  .catalog
+    .object
+      &:nth-child(6n - 2),
+      &:nth-child(6n - 1),
+      &:nth-child(6n)
+        min-height: 365px
+
+  .s-questions
+    padding: 70px 0
+
+  .questions-left
+    p
+      font-size: 20px
+      max-width: 550px
+
+  .questions-link
+    width: 150px
+    height: 150px
+
+    &:before
+      font-size: 44px
+
+
 @media (max-width: 1365.98px)
   h1, .h1
     font-size: 40px
@@ -191,6 +220,37 @@
 
   .form-success-title-icon
     top: -1px
+
+  .catalog-filter-title
+    padding: 0 10px 0 10px
+    font-size: 12px
+
+    &:after
+      font-size: 11px
+      right: 10px
+      top: 16px
+
+  .catalog-filter-dropdown-content
+    padding: 10px
+
+  .checkboxes-column
+    padding-left: 0
+
+  .checkboxes-column-item
+    span
+      font-size: 12px
+      padding-left: 22px
+
+      &:before
+        top: 0
+
+  .from-to-input
+    span
+      font-size: 12px
+
+  .checkboxes-row-item
+    span
+      font-size: 12px
 
 @media (max-width: 1199.98px)
   .header-logo
@@ -331,6 +391,10 @@
     position: static
     margin: 0 0 20px
 
+  .catalog
+    .object
+      min-height: 257px !important
+
 @media (max-width: 991.98px)
   .container
     padding: 0 20px
@@ -393,6 +457,117 @@
 
   .footer-contacts
     width: 33.33333%
+
+  .catalog-filter
+    position: fixed
+    top: 0
+    left: 0
+    width: 365px
+    background-color: #fff
+    z-index: 5
+    height: 100%
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+    flex-direction: column
+    overflow-y: auto
+    align-items: stretch
+    padding: 20px
+    transition: transform .4s ease
+    transform: translateX(-100%)
+
+    &.opened
+      transform: translateX(0)
+
+  .catalog-filter-items
+    display: block
+    width: 100%
+    margin: 0 0 20px
+
+  .catalog-filter-item
+    margin-bottom: 20px
+
+  .catalog-filter-title
+    -webkit-border-radius: 0 !important
+    -moz-border-radius: 0 !important
+    border-radius: 0 !important
+    border: none !important
+    padding: 0 !important
+    height: auto
+    line-height: 1.3
+    font-weight: 600
+    margin-bottom: 5px
+
+    &:after
+      display: none
+
+  .catalog-filter-dropdown
+    position: static
+    visibility: visible
+    opacity: 1
+    padding: 0
+    border: none
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    border-radius: 0
+
+  .catalog-filter-dropdown-content
+    padding: 0
+
+  .filter-view-btn
+    display: none
+
+  .catalog-filter-mob-title
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 20px
+    display: block
+
+  .catalog-filter-mob-close
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 19px
+    right: 20px
+    width: 30px
+    height: 30px
+    border: 1px solid rgba($text, .5)
+    border-radius: 50%
+
+    &:before
+      content: '\e90a'
+      font-family: icon
+      line-height: 1
+      font-weight: normal
+      font-size: 10px
+
+  .catalog-filter-submit
+    .btn
+      width: 100%
+
+  .s-breadcrumbs
+    margin-bottom: 30px
+
+  .filter-mob-btn
+    display: inline-flex
+
+  .catalog
+    grid-template-columns: 1fr 1fr
+    grid-gap: 5px
+
+  .questions-left
+    .h1
+      margin-bottom: 20px
+
+    p
+      font-size: 16px
+
+  .questions-link
+    width: 90px
+    height: 90px
+
+    &:before
+      font-size: 24px
+
 
 @media (max-width: 767.98px)
   body
@@ -812,3 +987,37 @@
     p
       font-size: 12px
       margin-bottom: 26px
+
+  .catalog
+    grid-template-columns: 1fr
+
+    .object
+      &:first-child
+        grid-column: auto
+        grid-row: auto
+
+  .catalog-filter
+    width: 100%
+
+  .s-catalog
+    padding-bottom: 30px
+
+  .s-questions
+    padding: 35px 0
+
+  .questions-left
+    margin-right: 20px
+
+    .h1
+      font-size: 16px
+      margin-bottom: 10px
+
+    p
+      font-size: 12px
+
+  .questions-link
+    width: 50px
+    height: 50px
+
+    &:before
+      font-size: 14px

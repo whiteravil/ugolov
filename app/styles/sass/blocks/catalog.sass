@@ -1,0 +1,229 @@
+.s-catalog
+  padding: 30px 0 115px
+  overflow: visible
+
+.catalog-filter
+  display: flex
+  align-items: center
+  margin-bottom: 28px
+
+.catalog-filter-submit
+  .btn
+    height: 44px
+    line-height: 44px
+    padding: 0 36px
+
+.catalog-filter-items
+  display: flex
+  flex-grow: 1
+  margin-right: 5px
+
+.catalog-filter-item
+  flex-grow: 1
+  position: relative
+  transition: border-radius .3s ease
+
+  &:not(:first-child)
+    .catalog-filter-dropdown
+      left: -1px
+      min-width: calc(100% + 1px)
+
+  &.opened
+    .catalog-filter-title
+      border-bottom-left-radius: 0 !important
+      border-bottom-right-radius: 0 !important
+
+      &:after
+        transform: rotate(180deg)
+
+    .catalog-filter-dropdown
+      opacity: 1
+      visibility: visible
+
+  &:first-child
+    .catalog-filter-title
+      border-radius: 5px 0 0 5px
+
+  &:last-child
+    .catalog-filter-title
+      border-radius: 0 5px 5px 0
+
+  & + .catalog-filter-item
+    .catalog-filter-title
+      border-left: none
+
+.catalog-filter-title
+  position: relative
+  cursor: pointer
+  padding: 0 60px 0 33px
+  font-size: 16px
+  height: 44px
+  line-height: 42px
+  border: 1px solid #E8EAEE
+  white-space: nowrap
+
+  &:after
+    content: '\e910'
+    font-family: icon
+    font-size: 14px
+    position: absolute
+    top: 14px
+    right: 33px
+    font-weight: normal
+    line-height: 1
+    +tr
+
+.catalog-filter-dropdown
+  position: absolute
+  top: calc(100% - 1px)
+  left: 0
+  border: 1px solid #E8EAEE
+  border-radius: 0 0 5px 5px
+  z-index: 2
+  background-color: #fff
+  +tr
+  opacity: 0
+  visibility: hidden
+  min-width: 100%
+
+.catalog-filter-dropdown-content
+  padding: 20px 17px 19px
+
+.from-to-block
+  display: flex
+  justify-content: space-between
+
+.from-to-input
+  width: calc(50% - 2px)
+  flex-shrink: 0
+  position: relative
+
+  input
+    min-width: 0
+    display: block
+    width: 100%
+    height: 30px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    padding: 0 30px 0 9px
+    border: 1px solid rgba(62, 71, 81, 0.3)
+    font-size: 12px
+
+    &::placeholder
+      color: rgba(#3E4751, .6)
+
+  span
+    line-height: 30px
+    right: 9px
+    top: 0
+    font-size: 16px
+    position: absolute
+
+.filter-view-btn
+  margin-top: 19px
+
+  .btn
+    height: 44px
+    line-height: 44px
+
+.checkboxes-column
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  padding-left: 16px
+
+.checkboxes-column-item
+  display: block
+  margin-bottom: 7px
+  position: relative
+
+  &:last-child
+    margin-bottom: 0
+
+  input
+    position: absolute
+    z-index: -1
+    visibility: hidden
+    opacity: 0
+
+    &:checked + span
+      &:before
+        border: 8px solid $accent
+
+  span
+    position: relative
+    font-size: 16px
+    padding-left: 27px
+    line-height: 1.3
+
+    &:before
+      content: ''
+      position: absolute
+      top: 3px
+      left: 0
+      +tr
+      width: 16px
+      height: 16px
+      border: 1px solid rgba(62, 71, 81, 0.3)
+      border-radius: 5px
+      cursor: pointer
+
+.checkboxes-row
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 8px
+
+.checkboxes-row-item
+  display: block
+  position: relative
+
+  input
+    position: absolute
+    z-index: -1
+    visibility: hidden
+
+    &:checked
+      & + span
+        color: #fff
+        border-color: $accent
+        background-color: $accent
+
+  span
+    display: block
+    height: 30px
+    line-height: 28px
+    text-align: center
+    padding: 0 5px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    font-size: 16px
+    border: 1px solid rgba(62, 71, 81, 0.3)
+    +tr
+    cursor: pointer
+    white-space: nowrap
+
+.catalog
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 20px
+
+  .object
+    &:first-child
+      grid-column: span 2
+      grid-row: span 2
+
+    &:nth-child(6n - 2),
+    &:nth-child(6n - 1),
+    &:nth-child(6n)
+      min-height: 534px
+
+.catalog-filter-mob-close
+  display: none
+
+.catalog-filter-mob-title
+  display: none
+
+.filter-mob-btn
+  display: none

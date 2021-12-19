@@ -1,0 +1,90 @@
+#gallery
+  overflow: hidden
+
+  .popup-block
+    overflow: hidden
+
+.gallery-slider-block
+  display: flex
+  min-height: calc(var(--vh) * 100)
+  align-items: center
+  justify-content: center
+
+.gallery-slider
+  max-width: 1225px
+  width: 60%
+  overflow: visible
+  flex-shrink: 0
+
+  .swiper-slide-active
+    .gallery-slider-img
+      img
+        transform: scale(1.1265)
+
+.gallery-slider-img
+  width: 100%
+  position: relative
+  padding-bottom: 55%
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    object-fit: cover
+    display: block
+    width: 100%
+    transition: transform .4s ease
+    border-radius: 5px
+
+.gallery-pagination
+  position: absolute
+  top: 111%
+  left: -6%
+  color: #fff
+  font-size: 20px
+  display: flex
+  align-items: center
+
+.gallery-current-slide-title
+  margin-right: 25px
+
+  &:after
+    content: ' /'
+
+.gallery-prev,
+.gallery-next
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  position: absolute
+  border: 1px solid #C4C4C4
+  color: #fff
+  cursor: pointer
+
+  &:before
+    font-weight: normal
+    line-height: 1
+    font-family: icon
+
+.gallery-next
+  width: 64px
+  height: 64px
+  right: -6%
+  top: 109%
+
+  &:before
+    content: '\e90f'
+    font-size: 23px
+    transform: translateX(3px)
+
+.gallery-prev
+  width: 46px
+  height: 46px
+  right: calc(-6% + 81px)
+  top: calc(109% + 9px)
+
+  &:before
+    content: '\e90e'
+    font-size: 17px

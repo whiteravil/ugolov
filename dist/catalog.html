@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Уголовный кодекс</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header class="header">
+	<div class="container">
+		<div class="header-row">
+
+			<div class="header-logo">
+				<a href="/" class="logo">
+					<img src="images/dist/logo.svg" alt="">
+				</a>
+			</div>
+
+			<div class="header-menu">
+				<div class="header-menu-container">
+
+					<nav class="main-menu">
+						<a href="#">Объекты</a>
+						<a href="#">Услуги</a>
+						<a href="#">Новости</a>
+						<a href="#">Инвестиции</a>
+						<a href="#">Клиенты</a>
+						<a href="#">Стать партнером</a>
+						<a href="#">Контакты</a>
+					</nav>
+
+					<div class="mob-menu-footer">
+						<a href="tel:89876543210" class="footer-contacts-link phone">8 987 654 32 10</a>
+						<a href="mailto:testmail.gmail.com" class="footer-contacts-link mail">testmail.gmail.com</a>
+						<nav class="soc">
+							<a href="#" class="soc-link"><span class="icon-facebook"></span></a>
+							<a href="#" class="soc-link"><span class="icon-twitter"></span></a>
+							<a href="#" class="soc-link"><span class="icon-instagram"></span></a>
+						</nav>
+						<a href="#callback" class="btn btn-with-icon open-popup">Оставить заявку <span class="icon-arrow-right"></span></a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="header-lang">
+				<a href="#" class="active">RU</a>
+				<a href="#">EN</a>
+			</div>
+
+			<div class="header-callback">
+				<a href="#callback" class="btn btn-with-icon open-popup">Оставить заявку <span class="icon-arrow-right"></span></a>
+			</div>
+
+			<div class="header-menu-btn"></div>
+
+		</div>
+	</div>
+</header>
+
+
+<div class="s-breadcrumbs">
+    <div class="container">
+
+        <nav class="breadcrumbs">
+            <a href="#">Главная</a>
+            <span>Каталог объектов</span>
+        </nav>
+
+    </div>
+</div>
+
+<div class="page-title">
+    <div class="container">
+        <h1>Каталог</h1>
+        <a href="#" class="btn btn-with-icon filter-mob-btn">Фильтр <span class="icon-filter"></span></a>
+    </div>
+</div>
+
+<section class="s-catalog">
+    <div class="container">
+
+        <div class="catalog-filter">
+
+            <div class="catalog-filter-mob-close"></div>
+
+            <div class="catalog-filter-mob-title">Фильтр</div>
+
+            <div class="catalog-filter-items">
+
+                <div class="catalog-filter-item">
+                    <div class="catalog-filter-title">Площадь</div>
+                    <div class="catalog-filter-dropdown">
+                        <div class="catalog-filter-dropdown-content">
+
+                            <div class="from-to-block">
+                                <div class="from-to-input">
+                                    <input type="text" class="number-mask" placeholder="от">
+                                    <span>м<sup>2</sup></span>
+                                </div>
+                                <div class="from-to-input">
+                                    <input type="text" class="number-mask" placeholder="до">
+                                    <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+
+                            <div class="filter-view-btn">
+                                <button class="btn btn-block">Показать 4000 предл.</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-filter-item">
+                    <div class="catalog-filter-title">Этаж</div>
+                    <div class="catalog-filter-dropdown">
+                        <div class="catalog-filter-dropdown-content">
+
+                            <div class="from-to-block">
+                                <div class="from-to-input">
+                                    <input type="text" class="number-mask" placeholder="от">
+                                </div>
+                                <div class="from-to-input">
+                                    <input type="text" class="number-mask" placeholder="до">
+                                </div>
+                            </div>
+
+                            <div class="filter-view-btn">
+                                <button class="btn btn-block">Показать 4000 предл.</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-filter-item">
+                    <div class="catalog-filter-title">Статус</div>
+                    <div class="catalog-filter-dropdown">
+                        <div class="catalog-filter-dropdown-content">
+
+                            <div class="checkboxes-column">
+                                <label class="checkboxes-column-item">
+                                    <input type="checkbox" name="status">
+                                    <span>Сдан</span>
+                                </label>
+                                <label class="checkboxes-column-item">
+                                    <input type="checkbox" name="status">
+                                    <span>Не сдан</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-filter-item">
+                    <div class="catalog-filter-title">Стоимость</div>
+                    <div class="catalog-filter-dropdown">
+                        <div class="catalog-filter-dropdown-content">
+
+                            <div class="from-to-block">
+                                <div class="from-to-input">
+                                    <input type="text" class="number-mask" placeholder="от">
+                                    <span>₽</span>
+                                </div>
+                                <div class="from-to-input">
+                                    <input type="text" class="number-mask" placeholder="до">
+                                    <span>₽</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-view-btn">
+                                <button class="btn btn-block">Показать 4000 предл.</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-filter-item">
+                    <div class="catalog-filter-title">Вместимость</div>
+                    <div class="catalog-filter-dropdown">
+                        <div class="catalog-filter-dropdown-content">
+
+                            <div class="checkboxes-row">
+
+                                <label class="checkboxes-row-item">
+                                    <input type="checkbox" name="capacity">
+                                    <span>1-2</span>
+                                </label>
+
+                                <label class="checkboxes-row-item">
+                                    <input type="checkbox" name="capacity">
+                                    <span>3-4</span>
+                                </label>
+
+                                <label class="checkboxes-row-item">
+                                    <input type="checkbox" name="capacity">
+                                    <span>5-6</span>
+                                </label>
+
+                                <label class="checkboxes-row-item">
+                                    <input type="checkbox" name="capacity">
+                                    <span>7-10</span>
+                                </label>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-filter-item">
+                    <div class="catalog-filter-title">Срок аренды</div>
+                    <div class="catalog-filter-dropdown">
+                        <div class="catalog-filter-dropdown-content">
+
+                            <div class="checkboxes-column">
+                                <label class="checkboxes-column-item">
+                                    <input type="checkbox" name="status">
+                                    <span>Час</span>
+                                </label>
+                                <label class="checkboxes-column-item">
+                                    <input type="checkbox" name="status">
+                                    <span>Сутки</span>
+                                </label>
+                                <label class="checkboxes-column-item">
+                                    <input type="checkbox" name="status">
+                                    <span>Месяц</span>
+                                </label>
+                                <label class="checkboxes-column-item">
+                                    <input type="checkbox" name="status">
+                                    <span>Погода</span>
+                                </label>
+                                <label class="checkboxes-column-item">
+                                    <input type="checkbox" name="status">
+                                    <span>Год</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="catalog-filter-submit">
+                <button class="btn">Найти</button>
+            </div>
+
+        </div>
+
+        <div class="catalog">
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/1.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «Neo Geo»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway orange">Калужская</div>
+                        <div class="stick"> 25 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/2.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «Гранд Сетунь Плаза»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway orange">«Полежаевская», «Беговая»</div>
+                        <div class="stick"> 52 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/3.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «The Yard»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway blue">Калужская</div>
+                        <div class="stick"> 25 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/4.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «Магистраль Плаза»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway red">«Молодежная», «Кунцевская»</div>
+                        <div class="stick"> 25 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/5.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «Neo Geo»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway green">Калужская</div>
+                        <div class="stick"> 12 730 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/1.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «Neo Geo»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway orange">Калужская</div>
+                        <div class="stick"> 25 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/2.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «Гранд Сетунь Плаза»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway orange">«Полежаевская», «Беговая»</div>
+                        <div class="stick"> 52 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/3.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «The Yard»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway blue">Калужская</div>
+                        <div class="stick"> 25 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="object">
+
+                <a href="#" class="object-link"></a>
+
+                <div class="object-img">
+                    <img src="images/dist/objects/4.jpg" alt="">
+                </div>
+
+                <div class="object-content">
+
+                    <div class="object-title">БЦ «Магистраль Плаза»</div>
+
+                    <div class="object-sticks">
+                        <div class="stick subway red">«Молодежная», «Кунцевская»</div>
+                        <div class="stick"> 25 000 кв<sup>2</sup></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="s-questions">
+    <div class="container">
+
+        <div class="questions">
+
+            <div class="questions-left">
+                <div class="h1">У вас еще остались вопросы?</div>
+                <p>Мы с радостью ответим на них или предоставим необходимую информацию</p>
+            </div>
+
+            <div class="questions-right">
+                <a href="#" class="questions-link"></a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<div class="popup-wrapper" id="callback">
+
+    <div class="popup-block">
+
+        <div class="popup-close"></div>
+
+        <div class="popup-content">
+
+            <div class="callback-block">
+
+                <div class="callback-sidebar"></div>
+
+                <div class="callback-main">
+                    <form class="callback-form js-form">
+
+                        <div class="form-success">
+                            <div class="form-success-title">
+                                <div class="form-success-title-icon">
+                                    <span class="icon-checkmark-big"></span>
+                                </div>
+                                <div class="h1">Спасибо за вашу заявку</div>
+                            </div>
+                            <p>В ближайшее время с вами свяжется наш специалист – будьте на связи</p>
+                            <button type="button" class="btn btn-blue btn-lg close-popup">Вернуться на главную</button>
+                        </div>
+
+                        <div class="form-content">
+
+                            <div class="form-title">
+                                <div class="h6">Обратная связь</div>
+                                <div class="h1">Заполните форму ниже,<br>и мы свяжемся с вами</div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <input
+                                                type="text"
+                                                name="Name"
+                                                class="form-control required"
+                                                placeholder="ваше имя*">
+                                    </div>
+                                </div>
+
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <input
+                                                type="text"
+                                                name="Phone"
+                                                class="form-control phone-mask required"
+                                                placeholder="ваш телефон*">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <textarea
+                                        class="form-control"
+                                        name="Message"
+                                        placeholder="Сообщение"></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="Privacy" checked>
+                                    <span>Я согласен с <a href="#">политикой конфиденциальности</a></span>
+                                </label>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-blue btn-lg">Отправить заявку</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-row">
+
+            <div class="footer-main">
+
+                <div class="footer-logo">
+                    <a href="/" class="logo">
+                        <img src="images/dist/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="footer-policy">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+
+            </div>
+
+            <div class="footer-nav">
+                <nav>
+                    <a href="#">Главная</a>
+                    <a href="#">Объекты</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Новости</a>
+                </nav>
+            </div>
+
+            <div class="footer-nav">
+                <nav>
+                    <a href="#">Инвестиции</a>
+                    <a href="#">Клиенты</a>
+                    <a href="#">Стать партнером</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+
+            <div class="footer-contacts">
+
+                <a href="#callback" class="btn btn-with-icon btn-blue open-popup">Оставить заявку <span class="icon-arrow-right"></span></a>
+
+                <a href="tel:89876543210" class="footer-contacts-link phone">8 987 654 32 10</a>
+                <a href="mailto:testmail.gmail.com" class="footer-contacts-link mail">testmail.gmail.com</a>
+
+                <nav class="soc">
+                    <a href="#" class="soc-link"><span class="icon-facebook"></span></a>
+                    <a href="#" class="soc-link"><span class="icon-twitter"></span></a>
+                    <a href="#" class="soc-link"><span class="icon-instagram"></span></a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
+
