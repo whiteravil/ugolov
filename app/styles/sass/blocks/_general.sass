@@ -24,10 +24,16 @@ h1, .h1
 
 h2, .h2
   flex-grow: 1
-  margin-right: 30px
+  margin-bottom: 30px
   font-weight: 600
   font-size: 46px
   letter-spacing: 1px
+
+h3, .h3
+  margin-bottom: 37px
+  line-height: 1.31
+  font-size: 32px
+  font-weight: 600
 
 .wrapper
   overflow: hidden
@@ -87,6 +93,8 @@ h2, .h2
   padding: 0 28px
   height: 60px
   line-height: 60px
+  font-size: 14px
+  font-weight: 500
 
 .btn-block
   width: 100%
@@ -94,6 +102,18 @@ h2, .h2
   &.btn-with-icon
     span
       margin-left: auto
+
+.btn-border
+  border: 1px solid $text
+  line-height: 38px
+  background-color: transparent
+  color: $text
+
+  &:hover
+    border-color: $accent
+    background-color: $accent
+    color: #fff
+
 
 .section-title
   display: flex
@@ -246,3 +266,10 @@ h2, .h2
 
       &:not(:last-child)
         margin-right: 30px
+
+.text-block
+  p
+    margin-bottom: 2rem
+
+  *:last-child
+    margin-bottom: 0

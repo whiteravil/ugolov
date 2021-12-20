@@ -1,7 +1,7 @@
-import Swiper, { Navigation } from 'swiper'
+import Swiper, { Navigation, Manipulation } from 'swiper'
 import IMask from 'imask'
 
-Swiper.use([Navigation])
+Swiper.use([Navigation, Manipulation])
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -86,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.classList.remove('active')
                 }
             })
-            navItem.classList.add('active')
         })
     })
 
@@ -247,8 +246,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 400)
         })
 
-        console.log(document.querySelectorAll('.form-success'))
-
         document.querySelectorAll('.form-success').forEach(success => success.classList.remove('active'))
         document.querySelectorAll('form .invalid').forEach(success => success.classList.remove('invalid'))
     }
@@ -331,6 +328,17 @@ document.addEventListener('DOMContentLoaded', () => {
             navigation: {
                 prevEl: prev,
                 nextEl: next
+            },
+            breakpoints: {
+                0: {
+                    spaceBetween: 10
+                },
+                992: {
+                    spaceBetween: 70
+                },
+                1366: {
+                    spaceBetween: 119
+                }
             }
         })
 
@@ -343,10 +351,98 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 
+    ymaps.ready(initProjectMap)
 
+    function initProjectMap () {
+        if (document.querySelector('.map-container')) {
+            const projectMap = new ymaps.Map('map', {
+                center: coordinates,
+                zoom: 15,
+                duration: 1000,
+                controls: []
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
 
+            const projectMapLabel = new ymaps.Placemark(coordinates, {}, {
+                iconLayout: 'default#image',
+                iconImageHref: '../images/dist/icons/map-marker.svg',
+                iconImageSize: [42, 60],
+                iconImageOffset: [-21 -30],
+            })
 
+            projectMap.geoObjects.add(projectMapLabel)
+        }
+    }
 
+    const scrollTo = document.querySelectorAll('.scroll-to')
+
+    scrollTo.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault()
+            const id = link.getAttribute('href')
+            const section = document.querySelector(id)
+            const header = document.querySelector('.header')
+
+            if (section) {
+                const top = section.getBoundingClientRect().top + pageYOffset - header.clientHeight - 20
+                window.scrollTo({
+                    top,
+                    left: 0,
+                    behavior: 'smooth'
+                })
+            }
+        })
+    })
+
+    const roomGalleryPopup = document.querySelector('#room-gallery')
+
+    if (roomGalleryPopup) {
+        const roomGalleryPrev = roomGalleryPopup.querySelector('.gallery-prev')
+        const roomGalleryNext = roomGalleryPopup.querySelector('.gallery-next')
+        const roomGallery = roomGalleryPopup.querySelector('.room-gallery-slider')
+        const roomView = document.querySelectorAll('.room-photo-view')
+
+        const roomGallerySlider = new Swiper(roomGallery, {
+            slidesPerView: 1,
+            speed: 800,
+            centeredSlides: true,
+            spaceBetween: 119,
+            navigation: {
+                prevEl: roomGalleryPrev,
+                nextEl: roomGalleryNext
+            },
+            breakpoints: {
+                0: {
+                    spaceBetween: 10
+                },
+                992: {
+                    spaceBetween: 70
+                },
+                1366: {
+                    spaceBetween: 119
+                }
+            }
+        })
+
+        roomView.forEach(roomViewItem => {
+            const id = roomViewItem.getAttribute('data-id')
+            const images = rooms_gallery[id.toString()]
+            roomViewItem.addEventListener('click', () => {
+                roomGallerySlider.removeAllSlides()
+                images.forEach(image => {
+                    roomGallerySlider.appendSlide(
+                        `<div class="swiper-slide">
+                            <div class="gallery-slider-img">
+                                <img src="${image}" alt="">
+                            </div>
+                        </div>`
+                    )
+                })
+                openPopup('#room-gallery')
+            })
+        })
+    }
 
     document.addEventListener('click', e => {
         const tg = e.target
@@ -356,8 +452,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!tg.closest('.catalog-filter-item')) {
             filters.forEach(item => item.classList.remove('opened'))
         }
-        if (!tg.closest('.catalog-filter') && !tg.closest('.filter-mob-btn')) {
-            filter.classList.remove('opened')
+        if (filter) {
+            if (!tg.closest('.catalog-filter') && !tg.closest('.filter-mob-btn')) {
+                filter.classList.remove('opened')
+            }
         }
     })
 

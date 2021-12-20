@@ -17,6 +17,8 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=9925668e-30fb-474d-8bd8-b5e18ed587e2&lang=ru_RU" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -123,6 +125,303 @@
                 <a href="#gallery" class="open-popup">
                     Все фото <span class="icon-arrow-right-small"></span>
                 </a>
+            </div>
+
+        </div>
+
+        <div class="product-characters-block">
+
+            <div class="h2">Характеристики объекта</div>
+
+            <div class="product-characters">
+
+                <div class="product-characters-list">
+
+                    <div class="product-characters-list-row">
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Локация</div>
+                            <p>Даниловская Мануфактура</p>
+                        </div>
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Адрес</div>
+                            <p>БЦ Мещерин, Варшавское шоссе, 9, стр. 1</p>
+                        </div>
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Класс здания</div>
+                            <p>В+</p>
+                        </div>
+
+                    </div>
+
+                    <div class="product-characters-list-row">
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Вместимость</div>
+                            <p>1-5 человек</p>
+                        </div>
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Общая площадь</div>
+                            <p>25 000 м<sup>2</sup></p>
+                        </div>
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Паркинг</div>
+                            <p>Городской, наземный</p>
+                        </div>
+
+                    </div>
+
+                    <div class="product-characters-list-row">
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Доступ в здание</div>
+                            <p>Круглосуточно</p>
+                        </div>
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Кондиционирование</div>
+                            <p>Индивидуальное</p>
+                        </div>
+
+                        <div class="product-characters-list-item">
+                            <div class="h6">Этаж</div>
+                            <p>2</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-characters-sidebar">
+
+                    <div class="product-characters-sidebar-item">
+                        <div class="product-characters-sidebar-item-icon">
+                            <span class="icon-subway"></span>
+                        </div>
+                        <div class="product-characters-sidebar-item-text">
+                            <p>«Полежаевская», «Беговая»</p>
+                            <a href="#map" class="scroll-to">Смотреть на карте</a>
+                        </div>
+                    </div>
+
+                    <div class="product-characters-sidebar-item">
+                        <div class="product-characters-sidebar-item-icon">
+                            <span class="icon-ruble"></span>
+                        </div>
+                        <div class="product-characters-sidebar-item-text">
+                            <p>115 000 ₽ / месяц</p>
+                        </div>
+                    </div>
+
+                    <div class="product-characters-sidebar-item">
+                        <div class="product-characters-sidebar-item-icon">
+                            <span class="icon-users"></span>
+                        </div>
+                        <div class="product-characters-sidebar-item-text">
+                            <p>1-5 человек</p>
+                        </div>
+                    </div>
+
+                    <div class="product-characters-sidebar-callback">
+                        <a href="#callback" class="btn btn-block btn-with-icon open-popup">Оставить заявку <span class="icon-arrow-right"></span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="s-product-description">
+    <div class="container">
+
+        <div class="product-description-title">
+            <div class="h2">Описание</div>
+        </div>
+
+        <div class="product-description-content">
+            <div class="text-block">
+                <h3>Введенный в эксплуатацию в 2009 году, сегодня бизнес-центр <br>«Магистраль Плаза» заполнен арендаторами на 95%. Компания Property Management предлагает своим партнерам свободные офисные площади <br>в бизнес-центре на выгодных условиях.</h3>
+                <p>На первом этаже здания располагаются кафе, рестораны, столовая, минимаркет, аптека, салон красоты, медицинский центр, терминалы банков, салон флористики. Сотрудники и гости бизнес-центра также могут воспользоваться услугами страховой компании и пункта бытового обслуживания.</p>
+                <p>Служба охраны бизнес-центра работает круглосуточно, что позволяет арендаторам всегда чувствовать себя <br>в безопасности, обеспеченной системой видеонаблюдения и сотрудниками ЧОПа.</p>
+                <p>«Магистраль Плаза» открыт для сотрудников круглосуточно, 7 дней <br>в неделю. Охраняемые паркинги также функционируют без перерывов.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="s-product-location">
+    <div class="container">
+
+        <div class="section-title">
+            <div class="h2">Месторасположение</div>
+        </div>
+
+        <div class="map-wrapper">
+            <script>
+                const coordinates = [55.781955, 37.562452];
+            </script>
+            <div id="map" class="map-container"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="s-rooms">
+    <div class="container">
+
+        <div class="section-title">
+            <div class="h2">Помещения</div>
+        </div>
+
+        <div class="rooms-table">
+
+            <div class="rooms-table-thead">
+                <div class="rooms-table-th number">№</div>
+                <div class="rooms-table-th photo">Фото</div>
+                <div class="rooms-table-th square">Площадь</div>
+                <div class="rooms-table-th floor">Этаж</div>
+                <div class="rooms-table-th status">Статус</div>
+                <div class="rooms-table-th price">Стоимость</div>
+                <div class="rooms-table-th rent"></div>
+            </div>
+
+            <div class="rooms-table-tbody">
+
+                <script>
+                    // Массивы фото для помещений (Цифра - это id помещения, равный data-id у .rooms-table-tr)
+                    const rooms_gallery = {
+                        1: [
+                            'images/dist/gallery/7.jpg',
+                            'images/dist/gallery/6.jpg',
+                            'images/dist/gallery/8.jpg',
+                            'images/dist/gallery/7.jpg',
+                        ],
+                        2: [
+                            'images/dist/gallery/7.jpg',
+                            'images/dist/gallery/6.jpg',
+                            'images/dist/gallery/8.jpg',
+                            'images/dist/gallery/7.jpg',
+                        ],
+                        3: [
+                            'images/dist/gallery/7.jpg',
+                            'images/dist/gallery/6.jpg',
+                            'images/dist/gallery/8.jpg',
+                            'images/dist/gallery/7.jpg',
+                        ],
+                        4: [
+                            'images/dist/gallery/7.jpg',
+                            'images/dist/gallery/6.jpg',
+                            'images/dist/gallery/8.jpg',
+                            'images/dist/gallery/7.jpg',
+                        ],
+                        5: [
+                            'images/dist/gallery/7.jpg',
+                            'images/dist/gallery/6.jpg',
+                            'images/dist/gallery/8.jpg',
+                            'images/dist/gallery/7.jpg',
+                        ]
+                    }
+                </script>
+
+                <div class="rooms-table-tr">
+                    <div class="rooms-table-td number" data-title="№">1</div>
+                    <div class="rooms-table-td photo" data-title="Фото">
+                        <div class="room-photo-view" data-id="1">
+                            <img src="images/dist/room-plane.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rooms-table-td square" data-title="Площадь">64.4 м<sup>2</sup></div>
+                    <div class="rooms-table-td floor" data-title="Этаж">2</div>
+                    <div class="rooms-table-td status" data-title="Статус">
+                        <span class="status green">Свободно</span>
+                    </div>
+                    <div class="rooms-table-td price" data-title="Стоимость">20 548 ₽/сут</div>
+                    <div class="rooms-table-td rent">
+                        <button class="btn btn-with-icon">Арендовать <span class="icon-arrow-right"></span></button>
+                    </div>
+                </div>
+
+                <div class="rooms-table-tr">
+                    <div class="rooms-table-td number" data-title="№">2</div>
+                    <div class="rooms-table-td photo" data-title="Фото">
+                        <div class="room-photo-view" data-id="2">
+                            <img src="images/dist/room-plane.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rooms-table-td square" data-title="Площадь">64.4 м<sup>2</sup></div>
+                    <div class="rooms-table-td floor" data-title="Этаж">2</div>
+                    <div class="rooms-table-td status" data-title="Статус">
+                        <span class="status green">Свободно</span>
+                    </div>
+                    <div class="rooms-table-td price" data-title="Стоимость">20 548 ₽/сут</div>
+                    <div class="rooms-table-td rent">
+                        <button class="btn btn-with-icon">Арендовать <span class="icon-arrow-right"></span></button>
+                    </div>
+                </div>
+
+                <div class="rooms-table-tr">
+                    <div class="rooms-table-td number" data-title="№">3</div>
+                    <div class="rooms-table-td photo" data-title="Фото">
+                        <div class="room-photo-view" data-id="3">
+                            <img src="images/dist/room-plane.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rooms-table-td square" data-title="Площадь">64.4 м<sup>2</sup></div>
+                    <div class="rooms-table-td floor" data-title="Этаж">2</div>
+                    <div class="rooms-table-td status" data-title="Статус">
+                        <span class="status green">Свободно</span>
+                    </div>
+                    <div class="rooms-table-td price" data-title="Стоимость">20 548 ₽/сут</div>
+                    <div class="rooms-table-td rent">
+                        <button class="btn btn-with-icon">Арендовать <span class="icon-arrow-right"></span></button>
+                    </div>
+                </div>
+
+                <div class="rooms-table-tr disabled">
+                    <div class="rooms-table-td number" data-title="№">4</div>
+                    <div class="rooms-table-td photo" data-title="Фото">
+                        <div class="room-photo-view" data-id="4">
+                            <img src="images/dist/room-plane.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rooms-table-td square" data-title="Площадь">64.4 м<sup>2</sup></div>
+                    <div class="rooms-table-td floor" data-title="Этаж">2</div>
+                    <div class="rooms-table-td status" data-title="Статус">
+                        <span class="status red">Свободно</span>
+                    </div>
+                    <div class="rooms-table-td price" data-title="Стоимость">20 548 ₽/сут</div>
+                    <div class="rooms-table-td rent">
+                        <button class="btn btn-border">Сообщить, когда освободиться <span class="icon-arrow-right"></span></button>
+                    </div>
+                </div>
+
+                <div class="rooms-table-tr disabled">
+                    <div class="rooms-table-td number" data-title="№">5</div>
+                    <div class="rooms-table-td photo" data-title="Фото">
+                        <div class="room-photo-view" data-id="5">
+                            <img src="images/dist/room-plane.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rooms-table-td square" data-title="Площадь">64.4 м<sup>2</sup></div>
+                    <div class="rooms-table-td floor" data-title="Этаж">2</div>
+                    <div class="rooms-table-td status" data-title="Статус">
+                        <span class="status red">Свободно</span>
+                    </div>
+                    <div class="rooms-table-td price" data-title="Стоимость">20 548 ₽/сут</div>
+                    <div class="rooms-table-td rent">
+                        <button class="btn btn-border">Сообщить, когда освободиться <span class="icon-arrow-right"></span></button>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -298,6 +597,34 @@
                         <div class="gallery-current-slide-title">БЦ «Магистраль Плаза»</div>
                         <div class="gallery-pagination-counter"></div>
                     </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="popup-wrapper" id="room-gallery">
+
+    <div class="popup-block">
+
+        <div class="popup-close"></div>
+
+        <div class="popup-content">
+
+            <div class="gallery-slider-block">
+
+                <div class="room-gallery-slider swiper">
+
+                    <div class="swiper-wrapper"></div>
+
+                    <div class="gallery-prev"></div>
+                    <div class="gallery-next"></div>
 
                 </div>
 

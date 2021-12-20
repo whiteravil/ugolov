@@ -1,3 +1,11 @@
+@media (max-width: 1800px)
+  .product-characters-list-item
+    p
+      font-size: 16px
+
+    &:last-child
+      width: 54%
+
 @media (max-width: 1599.98px)
   body
     font-size: 16px
@@ -102,6 +110,43 @@
 
     &:before
       font-size: 44px
+
+  .product-gallery
+    grid-template-columns: 1fr 160px
+
+  .h3, h3
+    font-size: 24px
+
+  .product-description-content
+    .h3, h3
+      margin-bottom: 30px
+
+  .s-product-description
+    padding: 70px 0
+
+  .s-product-location
+    padding: 70px 0 35px
+
+  .rooms-table-tr
+    font-size: 16px
+
+  .status
+    &:after
+      top: 6px
+
+  .rooms-table-td
+    &.rent
+      .btn
+        width: 207px
+
+  .product-gallery
+    margin-bottom: 70px
+
+  .s-product-main
+    padding-bottom: 70px
+
+  .s-rooms
+    padding: 35px 0 70px
 
 
 @media (max-width: 1365.98px)
@@ -252,6 +297,22 @@
     span
       font-size: 12px
 
+  .product-characters-list-item
+    padding: 15px 20px 15px 0
+
+    .h6
+      font-size: 16px
+
+    p
+      font-size: 14px
+
+  .product-characters-sidebar-callback
+    margin-top: 0
+
+  .gallery-slider,
+  .room-gallery-slider
+    width: 70%
+
 @media (max-width: 1199.98px)
   .header-logo
     position: relative
@@ -394,6 +455,60 @@
   .catalog
     .object
       min-height: 257px !important
+
+  .product-characters-sidebar
+    width: 310px
+
+  .rooms-table-tr
+    font-size: 12px
+
+  .status
+    padding-left: 12px
+
+    &:after
+      top: 5px
+      width: 6px
+      height: 6px
+
+  .room-photo-view
+    width: 64px
+
+  .rooms-table-td
+    &.rent
+      .btn
+        height: 40px
+        font-size: 12px
+        width: 170px
+
+  .rooms-table
+    margin-left: -30px
+    margin-right: -30px
+
+  .rooms-table-thead
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    border-radius: 0
+    font-size: 14px
+    margin-bottom: 0
+
+  .rooms-table-th
+    padding-top: 10px
+    padding-bottom: 10px
+
+  .rooms-table-th,
+  .rooms-table-td
+    &:first-child
+      padding-left: 30px
+
+    &:last-child
+      padding-right: 30px
+
+  .room-photo-view
+    &:after
+      font-size: 16px
+
+  .map-container
+    height: 400px
 
 @media (max-width: 991.98px)
   .container
@@ -568,6 +683,122 @@
     &:before
       font-size: 24px
 
+  .product-gallery
+    grid-template-columns: repeat(5, 1fr)
+
+  .product-gallery-img
+    &:first-child
+      padding-bottom: 56%
+      grid-column: span 5
+      grid-row: auto
+
+  .product-gallery-all
+    a
+      font-size: 12px
+
+      span
+        font-size: 9px
+        width: 19px
+        height: 19px
+        margin-left: 4px
+
+  .product-characters
+    display: block
+
+  .product-characters-list
+    margin: 0 0 20px
+
+  .product-characters-sidebar
+    width: 100%
+
+  .product-characters-sidebar-callback
+    .btn
+      width: auto
+
+  .product-gallery
+    margin-bottom: 30px
+
+  .product-characters-block
+    .h2
+      margin-bottom: 20px
+
+  .s-product-main
+    padding-bottom: 30px
+
+  .s-product-description
+    padding: 30px 0
+
+    .container
+      display: block
+
+  .product-description-title
+    width: 100%
+    padding: 0
+    margin: 0 0 20px
+
+  .product-description-content
+    width: 100%
+
+  .h3, h3
+    font-size: 18px
+
+  .s-product-location
+    padding: 30px 0 15px
+
+  .rooms-table-thead
+    display: none
+
+  .rooms-table-tr
+    display: block
+    box-shadow: none !important
+    margin: 0 0 10px !important
+    padding: 20px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    background-color: #eff3f9 !important
+    border: none !important
+
+  .rooms-table
+    margin-left: 0
+    margin-right: 0
+
+  .rooms-table-td
+    display: flex
+    width: 100% !important
+    border-bottom: 1px solid rgba($text, .15)
+    padding: 15px 0 !important
+    font-size: 14px
+    text-align: right
+
+    &:first-child
+      border-top: none !important
+      padding-top: 0 !important
+
+    &:last-child
+      padding-bottom: 0 !important
+      border-bottom: none !important
+
+    &:before
+      content: attr(data-title)
+      font-size: 14px
+      font-weight: bold
+      flex-grow: 1
+      margin-right: 20px
+      text-align: left
+
+  .gallery-pagination,
+  .gallery-next,
+  .gallery-prev
+    display: none
+
+  .gallery-slider,
+  .room-gallery-slider
+    width: calc(100% - 40px)
+    padding-right: 50px
+  .gallery-slider-img
+    img
+      transform: scale(1) !important
 
 @media (max-width: 767.98px)
   body
@@ -670,6 +901,15 @@
 
       &:before
         top: 4px
+
+  .product-characters-sidebar-item-text
+    font-size: 14px
+
+    a
+      font-size: 14px
+
+  .product-characters-sidebar-item-icon
+    margin-right: 6px
 
 @media (max-width: 575.98px)
   .header-row
@@ -1021,3 +1261,46 @@
 
     &:before
       font-size: 14px
+
+  .product-gallery-img
+    &:not(:first-child)
+      display: none
+
+  .product-gallery-all
+    grid-column: span 5
+    padding: 0
+    height: 40px
+
+  .product-characters-list-row
+    display: block
+    border: none !important
+
+  .product-characters-list-item
+    padding: 10px 0
+
+    .h6
+      font-size: 12px
+      font-weight: bold
+      margin-bottom: 3px
+
+    p
+      font-size: 14px
+
+  .product-characters-sidebar
+    padding: 20px
+
+  .product-characters-sidebar-callback
+    .btn
+      width: 100%
+
+  .rooms-table-td
+    &.rent
+      &:before
+        display: none
+
+      .btn
+        width: 100%
+        justify-content: space-between
+
+  .s-rooms
+    padding-bottom: 30px
