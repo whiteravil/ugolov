@@ -38,6 +38,7 @@
   "dependencies": {
     "imask": "^6.2.2",
     "simplebar": "^5.3.5",
+    "styleselect": "^1.0.3",
     "swiper": "^7.3.2"
   }
 }

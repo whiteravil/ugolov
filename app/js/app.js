@@ -1,6 +1,8 @@
 import Swiper, { Navigation, Manipulation } from 'swiper'
 import IMask from 'imask'
 
+const styleSelect = require('styleSelect')
+
 Swiper.use([Navigation, Manipulation])
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     getCurrentInnerHeight()
 
     window.addEventListener('resize', getCurrentInnerHeight)
-
 
     const header = document.querySelector('.header')
 
@@ -443,6 +444,28 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     }
+
+    const selects = document.querySelectorAll('select.select-style')
+
+    selects.forEach(select => {
+        styleSelect(select)
+    })
+
+    const newsBanners = document.querySelectorAll('.news-banners')
+
+    newsBanners.forEach(newsBanner => {
+        const prev = newsBanner.querySelector('.banners-prev')
+        const next = newsBanner.querySelector('.banners-next')
+
+        const newsBannerSlider = new Swiper(newsBanner, {
+            slidesPerView: 1,
+            speed: 800,
+            navigation: {
+                prevEl: prev,
+                nextEl: next
+            }
+        })
+    })
 
     document.addEventListener('click', e => {
         const tg = e.target

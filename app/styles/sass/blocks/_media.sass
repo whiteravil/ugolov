@@ -1,3 +1,234 @@
+@media (min-width: 1200.98px)
+  .events
+    .new
+      &:nth-child(2)
+        grid-row: span 2
+
+        .new-img
+          opacity: 1
+
+        .news-content
+          color: #fff
+
+        .news-date
+          color: #fff
+
+        .news-title
+          border-color: #fff
+
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8)
+        display: flex
+        padding: 20px
+
+        .new-img
+          position: static
+          opacity: 1
+          width: 139px
+          min-height: 128px
+          -webkit-border-radius: 5px
+          -moz-border-radius: 5px
+          border-radius: 5px
+          flex-shrink: 0
+          margin-right: 15px
+          overflow: hidden
+
+          &:after
+            display: none
+
+        .news-content
+          flex-grow: 1
+          padding: 0
+          min-height: 0
+
+        .news-descr
+          display: none
+
+        .news-title
+          margin: 0
+          color: $text !important
+          line-height: 1.2
+          font-size: 20px
+          padding-top: 13px
+          border-top: 1px solid rgba($text, .2) !important
+
+        .news-date
+          font-size: 18px
+          color: $accent !important
+
+          span
+            font-size: 28px
+
+  .overview
+    .new
+      &:nth-child(1)
+        grid-row: span 3
+
+        .new-img
+          opacity: 1
+
+        .news-content
+          color: #fff
+
+        .news-date
+          color: #fff
+
+        .news-title
+          border-color: #fff
+
+        .news-descr
+          max-width: 693px
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        display: flex
+        padding: 20px
+
+        .new-img
+          position: static
+          opacity: 1
+          width: 139px
+          min-height: 128px
+          -webkit-border-radius: 5px
+          -moz-border-radius: 5px
+          border-radius: 5px
+          flex-shrink: 0
+          margin-right: 15px
+          overflow: hidden
+
+          &:after
+            display: none
+
+        .news-content
+          flex-grow: 1
+          padding: 0
+          min-height: 0
+
+        .news-descr
+          display: none
+
+        .news-title
+          margin: 0
+          color: $text !important
+          line-height: 1.2
+          font-size: 20px
+          padding-top: 13px
+          border-top: 1px solid rgba($text, .2) !important
+
+        .news-date
+          font-size: 18px
+          color: $accent !important
+
+          span
+            font-size: 28px
+  .smi
+    .new
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6)
+        display: flex
+        padding: 20px
+
+        .new-img
+          position: static
+          opacity: 1
+          width: 139px
+          min-height: 128px
+          -webkit-border-radius: 5px
+          -moz-border-radius: 5px
+          border-radius: 5px
+          flex-shrink: 0
+          margin-right: 15px
+          overflow: hidden
+
+          &:after
+            display: none
+
+        .news-content
+          flex-grow: 1
+          padding: 0
+          min-height: 0
+
+        .news-descr
+          display: none
+
+        .news-title
+          margin: 0
+          color: $text !important
+          line-height: 1.2
+          font-size: 20px
+          padding-top: 13px
+          border-top: 1px solid rgba($text, .2) !important
+
+        .news-date
+          font-size: 18px
+          color: $accent !important
+
+          span
+            font-size: 28px
+
+@media (min-width: 992px) and (max-width: 1200px)
+  .events
+    .new
+      &:nth-child(2)
+        grid-column: span 2
+
+        .new-img
+          opacity: 1
+
+        .news-content
+          color: #fff
+
+        .news-date
+          color: #fff
+
+        .news-title
+          border-color: #fff
+
+        .news-descr
+          max-width: 693px
+
+
+  .overview
+    .new
+      &:nth-child(odd)
+        .new-img
+          opacity: 1
+
+        .news-content
+          color: #fff
+
+        .news-date
+          color: #fff
+
+        .news-title
+          border-color: #fff
+
+        .news-descr
+          max-width: 693px
+
+  .smi
+    .new
+      &:nth-child(2)
+        grid-column: span 2
+
+        .new-img
+          opacity: 1
+
+        .news-content
+          color: #fff
+
+        .news-date
+          color: #fff
+
+        .news-title
+          border-color: #fff
+
+        .news-descr
+          max-width: 693px
+
 @media (max-width: 1800px)
   .product-characters-list-item
     p
@@ -312,6 +543,25 @@
   .gallery-slider,
   .room-gallery-slider
     width: 70%
+
+  .news-banner
+    min-height: 420px
+    padding: 30px
+
+  .s-news-banners
+    padding-bottom: 35px
+
+  .pagination
+    margin-top: 35px
+
+  .s-events
+    padding: 35px 0
+
+  .s-overview
+    padding: 35px 0
+
+  .s-smi
+    padding: 35px 0 70px
 
 @media (max-width: 1199.98px)
   .header-logo
@@ -799,6 +1049,18 @@
   .gallery-slider-img
     img
       transform: scale(1) !important
+
+  .events
+    grid-template-columns: 1fr 1fr
+    grid-gap: 10px
+
+  .overview
+    grid-template-columns: 1fr 1fr
+    grid-gap: 10px
+
+  .smi
+    grid-template-columns: 1fr 1fr
+    grid-gap: 10px
 
 @media (max-width: 767.98px)
   body
@@ -1304,3 +1566,55 @@
 
   .s-rooms
     padding-bottom: 30px
+
+  .callback-main
+    max-width: calc(100% - 41px)
+
+  .news-banner
+    padding: 19px 23px
+
+  .news-banner-date
+    font-size: 20px
+
+    span
+      font-size: 30px
+
+  .news-banner-title
+    padding-right: 65px
+
+    .h2
+      font-size: 16px
+
+  .news-banners
+    .banners-next,
+    .banners-prev
+      bottom: 18px
+
+  .news-banner
+    min-height: 300px
+
+  .events
+    grid-template-columns: 1fr
+
+    .news-content
+      min-height: 232px
+
+  .overview
+    grid-template-columns: 1fr
+
+    .news-content
+      min-height: 232px
+
+  .smi
+    grid-template-columns: 1fr
+
+    .news-content
+      min-height: 232px
+
+  .pagination
+    flex-wrap: wrap
+
+  .pagination-nav
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px

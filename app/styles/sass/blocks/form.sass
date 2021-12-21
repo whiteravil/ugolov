@@ -183,3 +183,91 @@ textarea.form-control
   justify-content: center
   font-size: 28px
   color: #fff
+
+.style-select
+  width: 100%
+  color: #fff
+
+  &.open
+    .ss-selected-option
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+      background: #2C3452
+      &:after
+        transform: rotate(180deg)
+
+  .ss-selected-option
+    border: 1px solid rgba(#fff, .8)
+    height: 48px
+    line-height: 46px
+    padding: 0 45px 0 18px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    background: transparent
+    +tr
+    font-size: 12px
+    text-transform: uppercase
+    white-space: nowrap
+    overflow: hidden
+    -ms-text-overflow: ellipsis
+    text-overflow: ellipsis
+    color: #fff
+
+    &:after
+      content: '\e910' !important
+      font-family: icon
+      font-weight: normal
+      line-height: 1
+      width: 14px
+      height: 14px
+      font-size: 14px
+      color: rgba(#fff, .7)
+      top: 18px
+      right: 18px
+      +tr
+
+  .ss-dropdown
+    top: calc(100% - 1px)
+    background: #2C3452
+    box-shadow: none
+    border-radius: 0 0 5px 5px
+    border: 1px solid rgba(#fff, .8)
+    overflow: hidden
+    z-index: 2
+
+    .ss-option
+      font-size: 12px
+      text-transform: uppercase
+      padding: 12px 18px
+      color: #fff
+      background: transparent
+
+      &.highlighted
+        background: #29314F
+        color: #fff
+
+      &:before
+        display: none
+
+select
+  width: 100%
+  border: 1px solid rgba(#fff, .8)
+  height: 48px
+  line-height: 46px
+  padding: 0 45px 0 15px
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  background-color: transparent
+  +tr
+  font-size: 12px
+  text-transform: uppercase
+  color: #fff
+  background-image: url(../images/dist/icons/angle-down.svg)
+  background-repeat: no-repeat
+  background-position: top 50% right 18px
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  outline: none !important
