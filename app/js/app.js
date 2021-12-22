@@ -1,9 +1,9 @@
-import Swiper, { Navigation, Manipulation } from 'swiper'
+import Swiper, { Navigation, Manipulation, Autoplay } from 'swiper'
 import IMask from 'imask'
 
 const styleSelect = require('styleSelect')
 
-Swiper.use([Navigation, Manipulation])
+Swiper.use([Navigation, Manipulation, Autoplay])
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
             navigation: {
                 prevEl: bannersNavPrev,
                 nextEl: bannersNavNext
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             }
         })
 
@@ -367,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const projectMapLabel = new ymaps.Placemark(coordinates, {}, {
                 iconLayout: 'default#image',
-                iconImageHref: '../images/dist/icons/map-marker.svg',
+                iconImageHref: 'images/dist/icons/map-marker.svg',
                 iconImageSize: [42, 60],
                 iconImageOffset: [-21 -30],
             })
@@ -465,6 +469,52 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextEl: next
             }
         })
+    })
+
+    const imgSliders = document.querySelectorAll('.img-slider')
+
+    imgSliders.forEach(imgSlider => {
+        const prev = imgSlider.querySelector('.banners-prev')
+        const next = imgSlider.querySelector('.banners-next')
+
+        const newsBannerSlider = new Swiper(imgSlider, {
+            slidesPerView: 1,
+            speed: 800,
+            navigation: {
+                prevEl: prev,
+                nextEl: next
+            }
+        })
+    })
+
+    document.querySelectorAll('img.replace-svg').forEach(element => {
+        const imgID = element.getAttribute('id')
+        const imgClass = element.getAttribute('class')
+        const imgURL = element.getAttribute('src')
+
+        const xhr = new XMLHttpRequest()
+        xhr.onreadystatechange = () => {
+            if(xhr.readyState == 4 && xhr.status == 200) {
+                const svg = xhr.responseXML.getElementsByTagName('svg')[0];
+                if(imgID != null) {
+                    svg.setAttribute('id', imgID);
+                }
+                if(imgClass != null) {
+                    svg.setAttribute('class', imgClass + ' replaced-svg');
+                }
+                svg.removeAttribute('xmlns:a')
+                if (
+                    !svg.hasAttribute('viewBox') &&
+                    svg.hasAttribute('height') &&
+                    svg.hasAttribute('width')
+                ) {
+                    svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
+                }
+                element.parentElement.replaceChild(svg, element)
+            }
+        }
+        xhr.open('GET', imgURL, true)
+        xhr.send(null)
     })
 
     document.addEventListener('click', e => {

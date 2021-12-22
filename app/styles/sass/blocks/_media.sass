@@ -379,6 +379,26 @@
   .s-rooms
     padding: 35px 0 70px
 
+  .text-block
+    blockquote
+      font-size: 50px
+
+  .img-slide-content
+    height: 565px
+
+  .s-post
+    padding-bottom: 70px
+
+  .img-slider
+    margin: 70px 0
+
+  .other-news
+    margin-top: 70px
+
+  .other-news-slider
+    .news-slider
+      max-width: calc(100vw - 150px)
+
 
 @media (max-width: 1365.98px)
   h1, .h1
@@ -430,6 +450,8 @@
     font-size: 21px
 
   .service-icon
+    width: 50px
+    height: 30px
     span
       font-size: 30px
 
@@ -562,6 +584,54 @@
 
   .s-smi
     padding: 35px 0 70px
+
+  .post-content
+    padding: 40px 30px
+
+  .post-date
+    font-size: 38px
+    margin-right: 30px
+
+    span
+      font-size: 60px
+
+  .post-header
+    padding-bottom: 30px
+    margin-bottom: 30px
+
+  .text-block
+    img
+      margin-bottom: 2.5rem
+
+  .text-row
+    margin: 3rem 0
+
+  .text-block
+    blockquote
+      padding: 30px 0
+      font-size: 30px
+      border-top-width: 2px
+      border-bottom-width: 2px
+
+  .text-row
+    grid-gap: 40px
+    grid-template-columns: 1fr 1fr
+
+  .img-slider
+    margin: 40px 0
+
+  .other-news
+    margin-top: 40px
+
+  .other-news-slider
+    .news-slider
+      .slider-next,
+      .slider-prev
+        bottom: calc(100% + 48px)
+
+  .other-news-slider
+    .news-slider
+      max-width: calc(100vw - 120px)
 
 @media (max-width: 1199.98px)
   .header-logo
@@ -730,6 +800,9 @@
         font-size: 12px
         width: 170px
 
+      .btn-border
+        padding-top: 5px
+
   .rooms-table
     margin-left: -30px
     margin-right: -30px
@@ -759,6 +832,25 @@
 
   .map-container
     height: 400px
+
+  .img-slide-content
+    height: 400px
+    padding: 20px
+
+  .img-slide-title
+    font-size: 20px
+    padding-top: 20px
+
+  .img-slider
+    .banners-prev,
+    .banners-next
+      bottom: 19px
+
+    .banners-next
+      right: 20px
+
+    .banners-prev
+      right: 66px
 
 @media (max-width: 991.98px)
   .container
@@ -1062,6 +1154,38 @@
     grid-template-columns: 1fr 1fr
     grid-gap: 10px
 
+  .post-content
+    padding: 30px 20px
+
+  .post-date
+    margin-right: 20px
+    font-size: 24px
+
+    span
+      font-size: 33px
+
+  .post-header
+    h1
+      font-size: 24px
+
+  .text-row
+    display: block
+    margin: 25px 0
+
+  .text-col
+    margin-bottom: 25px
+
+    &:last-child
+      margin-bottom: 0
+
+  .text-block
+    blockquote
+      font-size: 18px
+      padding: 15px 0
+      border-top-width: 1px
+      border-bottom-width: 1px
+
+
 @media (max-width: 767.98px)
   body
     font-size: 12px
@@ -1298,6 +1422,8 @@
     top: 14px
     right: 17px
     font-size: 26px
+    width: 36px
+    height: 26px
 
     span
       font-size: 26px
@@ -1564,6 +1690,11 @@
         width: 100%
         justify-content: space-between
 
+      .btn-border
+        display: flex
+        padding-top: 0
+        text-align: left
+
   .s-rooms
     padding-bottom: 30px
 
@@ -1618,3 +1749,67 @@
     width: 100%
     margin-right: 0
     margin-bottom: 20px
+
+
+  .s-post
+    padding-bottom: 0
+
+  .post-content
+    padding: 20px 0 50px
+
+    &:after
+      width: auto
+      left: -20px
+      right: -20px
+      -webkit-border-radius: 0
+      -moz-border-radius: 0
+      border-radius: 0
+
+  .post-header
+    display: block
+    padding-bottom: 20px
+    margin-bottom: 20px
+
+  .post-date
+    text-align: left
+    margin: 0 0 20px
+
+  .img-slide-title
+    padding-right: 80px
+    font-size: 16px
+
+  .other-news
+    padding-top: 20px
+    margin-top: 20px
+
+    .section-title
+      margin-bottom: 20px
+
+  .other-news-slider
+    width: 100%
+    overflow: visible
+
+  .other-news-slider
+    .news-slider
+      max-width: none
+      width: 100%
+      .slider-prev
+        bottom: calc(100% + 20px)
+      .slider-next
+        bottom: calc(100% + 16px)
+
+  .other-news
+    .swiper-slide
+      opacity: 1 !important
+      visibility: visible !important
+      transform: none !important
+
+  .service
+    background-color: #fff !important
+    color: $text !important
+
+  .service-icon
+    svg
+      fill: $accent !important
+      path
+        fill: $accent !important

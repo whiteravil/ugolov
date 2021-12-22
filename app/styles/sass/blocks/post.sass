@@ -1,0 +1,127 @@
+.s-post
+  padding: 0 0 166px
+
+.post-content
+  padding: 85px 45px 70px
+  position: relative
+  z-index: 1
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    background-color: #EFF3F9
+    width: calc(50% + 50vw)
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+
+.post-header
+  display: flex
+  padding-bottom: 50px
+  margin-bottom: 58px
+  border-bottom: 1px solid rgba($text, .2)
+
+  h1
+    margin: 0
+    flex-grow: 1
+
+.post-date
+  font-size: 57px
+  line-height: .9
+  color: $accent
+  text-align: center
+  margin-right: 83px
+
+  span
+    font-size: 92px
+    font-weight: 600
+    display: block
+
+.text-row
+  display: grid
+  grid-template-columns: .6fr .4fr
+  grid-gap: 100px
+  margin: 100px 0
+
+.img-slider
+  margin: 90px 0 70px
+  overflow: hidden
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+
+.img-slide
+  position: relative
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    margin: 0 !important
+    z-index: 0
+    object-fit: cover
+    border-radius: 0
+
+.img-slide-content
+  position: relative
+  z-index: 1
+  height: 767px
+  padding: 30px 37px
+  display: flex
+  align-items: flex-end
+  background-color: rgba(#272C3E, .2)
+  color: #fff
+
+.img-slide-title
+  font-weight: 600
+  font-size: 28px
+  line-height: 1.2
+  border-top: 1px solid rgba(#fff, .5)
+  width: 100%
+  padding-top: 30px
+  padding-right: 120px
+
+.other-news
+  padding-top: 36px
+  border-top: 1px solid rgba($text, .2)
+  margin-top: 100px
+  position: relative
+
+  .new
+    background-color: #fff
+
+  .swiper-slide
+    transition: all .8s ease
+    transform: translateX(100%)
+    opacity: 0
+    visibility: hidden
+
+    &.swiper-slide-active
+      transform: translateX(0)
+      opacity: 1
+      visibility: visible
+
+      & ~ .swiper-slide
+        transform: translateX(0)
+        opacity: 1
+        visibility: visible
+
+.other-news-slider
+  overflow: hidden
+  width: calc(50vw + 50%)
+
+  .news-slider
+    max-width: max(100vw - 190px)
+    width: 1570px
+    margin: 0
+
+    .slider-next,
+    .slider-prev
+      bottom: calc(100% + 63px)

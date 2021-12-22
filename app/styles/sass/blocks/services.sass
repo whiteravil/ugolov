@@ -46,6 +46,12 @@
     .service-icon
       color: #fff
 
+      svg
+        fill: #fff
+
+        path
+          fill: #fff
+
 .service-link
   position: absolute
   top: 0
@@ -61,8 +67,27 @@
   +tr
   color: $accent
   display: flex
+  width: 80px
+  height: 50px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: contain
+
+  svg
+    width: 100%
+    height: 100%
+    +tr
+    fill: $accent
+
+    path
+      fill: $accent
+      +tr
+
   span
     font-size: 50px
+
     &.icon-car
       font-size: 66px
       margin-top: -10px
