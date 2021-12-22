@@ -23,22 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/parts/consultation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/parts/popups/questions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parts/questions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/questions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/_config.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/_config.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/news.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/news.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +71,8 @@
       <workItem from="1640028204615" duration="12708000" />
       <workItem from="1640121612069" duration="5398000" />
       <workItem from="1640127152077" duration="113000" />
-      <workItem from="1640127276676" duration="719000" />
+      <workItem from="1640127276676" duration="746000" />
+      <workItem from="1640128198011" duration="17000" />
     </task>
     <servers />
   </component>
@@ -114,10 +100,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639510429351" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1639912820306">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1640128213715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1639912820306" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1640128213715" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639860060358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
