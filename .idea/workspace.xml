@@ -23,114 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/parts/header-light.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/parts/header/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/parts/header/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/sass/blocks/contacts.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/media.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/dist/banners/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/dist/banners/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/dist/news-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/src/banners/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/src/banners/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/src/news-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/news-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/banners.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/form.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/gallery.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/gallery.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/news.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/news.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/product.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/product.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/catalog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/media.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/popups.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Icons/icomoon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Icons/icomoon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Icons/icomoon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Icons/icomoon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Manrope/Manrope-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Manrope/Manrope-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Manrope/Manrope-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Manrope/Manrope-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Manrope/Manrope-Semibold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Manrope/Manrope-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/banners/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/banners/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/brands/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/brands/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/brands/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/brands/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/callback-sidebar-img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/gallery/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/angle-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/angle-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/angle-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/arrow-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/arrow-right-small.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/arrow-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/bar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/boxes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/building.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/car.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/checkmark-big.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/checkmark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/filter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/magnify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/ruble.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/subway.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/target.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icomoon/users.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icons/angle-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/icons/map-marker.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/invest-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/news-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/news/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/objects/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/objects/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/objects/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/objects/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/objects/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/popup-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/post-img-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/post-img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/questions-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/room-plane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/services-icons/boxes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/services-icons/building.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/services-icons/car.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/dist/services-icons/target.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/news-post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/news.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/product.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +74,7 @@
       <workItem from="1640127276676" duration="746000" />
       <workItem from="1640128198011" duration="17000" />
       <workItem from="1640195018252" duration="11340000" />
-      <workItem from="1640284806667" duration="10424000" />
+      <workItem from="1640284806667" duration="10655000" />
     </task>
     <servers />
   </component>
