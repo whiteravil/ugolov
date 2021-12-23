@@ -1,0 +1,167 @@
+.s-contacts-main
+  padding-top: 117px
+  position: relative
+
+  .container
+    position: relative
+    z-index: 1
+
+  .breadcrumbs
+    color: rgba(#fff, .8)
+
+    a
+      &:after
+        color: rgba(#fff, .8)
+
+  .page-title
+    color: #fff
+
+
+.s-contacts-main-img
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 522px
+  z-index: 0
+
+  img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#272C3E, .4)
+
+.contacts-map
+  margin-bottom: 31px
+
+.contacts-map-container
+  width: 100%
+  overflow: hidden
+  border-radius: 5px
+  height: 562px
+
+  [class*='ground-pane']
+    filter: grayscale(1)
+
+.contacts-info
+  display: flex
+  margin: 0 -10px
+  flex-wrap: wrap
+
+.contacts-info-block
+  padding: 0 10px
+  width: 25%
+
+  &:first-child
+    width: 33.33333%
+
+  &:last-child
+    width: 16.66666%
+
+  .h6
+    font-size: 16px
+    margin-bottom: 7px
+    color: rgba($text, .8)
+
+  p
+    margin: 0
+    font-size: 28px
+    font-weight: bold
+
+    a
+      color: inherit
+      +tr
+
+      &[href*="mailto"]
+        text-decoration: underline
+
+      &:hover
+        color: $accent
+
+  .soc
+    margin-top: 13px
+
+    li
+      margin-right: 18px
+
+    a
+      font-size: 18px
+
+.s-second-map
+  padding: 70px 0 130px
+  color: #fff
+  background-image: url(../images/dist/contacts-dark-bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+  .contacts-info-block
+    .h6
+      color: rgba(#fff, .4)
+
+  .soc-link
+    &:hover
+      color: #fff
+
+  .callback-form-block
+    margin-top: 130px
+    padding: 71px 0 0
+    border-top: 1px solid rgba(#fff, .3)
+    display: flex
+
+
+.callback-form-block-left
+  width: 50%
+  flex-shrink: 0
+  padding-right: 20px
+
+  .h6
+    font-size: 14px
+    color: rgba(#fff, .5)
+    text-transform: uppercase
+    margin-bottom: 14px
+
+  .h1
+    line-height: 1.1
+    margin: 0
+
+.callback-form-block-right
+  width: 50%
+  flex-shrink: 0
+  padding-top: 52px
+
+  .form-content
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+
+    > *
+      flex-shrink: 0
+
+    > .form-row
+      width: calc(100% + 20px)
+
+    > .form-group
+      width: 100%
+
+    > .form-checkbox
+      flex-grow: 1
+      margin: auto 20px auto 0
+      padding-top: 34px
+
+
+    > .form-submit
+      padding-top: 34px
+
+      .btn
+        text-align: center

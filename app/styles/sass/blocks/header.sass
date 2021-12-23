@@ -31,29 +31,40 @@
   margin-right: 93px
 
 .logo
-  img
+  img, svg
     display: block
     width: 186px
+    height: auto
+
+  svg
+    path
+      +tr
 
 .header-menu
   flex-grow: 1
   margin-right: 30px
 
 .main-menu
-  display: flex
-  align-items: center
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+    display: flex
+    align-items: center
+
+    li
+      margin-right: 30px
+
+      &:last-child
+        margin-right: 0
 
   a
-    margin-right: 30px
     color: $dark
     +tr
     font-size: 18px
 
     &:hover
-      color: $accent
-
-    &:last-child
-      margin-right: 0
+      color: $accent !important
 
 .header-lang
   display: flex
@@ -69,7 +80,7 @@
       margin-right: 0
 
     &:hover
-      color: $accent
+      color: $accent !important
 
     &.active
       font-weight: bold
@@ -79,3 +90,41 @@
 
 .header-menu-btn
   display: none
+
+body
+  &.header-light
+    .wrapper
+      padding-top: 0
+
+    .header
+      background-color: transparent
+      transition: background-color .3s ease
+
+      &:not(.fixed):not(.menu-is-opened)
+
+        .header-logo
+          svg
+            fill: white
+
+            path
+              fill: white
+
+        .main-menu
+          a
+            color: #fff
+
+        .header-lang
+          a
+            color: #fff
+
+        .header-callback
+          .btn
+            background-color: #7CACF3
+
+            &:hover
+              background-color: #4287ed
+
+      &.fixed
+        background-color: #fff
+
+

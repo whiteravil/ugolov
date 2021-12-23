@@ -16,9 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', getCurrentInnerHeight)
 
-    const header = document.querySelector('.header')
-
 	function scrollHeader () {
+        const header = document.querySelector('.header')
 	    if (window.pageYOffset > 0) {
 	        header.classList.add('fixed')
         } else {
@@ -32,21 +31,21 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollHeader()
     })
 
-    const bannersBlock = document.querySelectorAll('.banners-block')
+    const pannersBlock = document.querySelectorAll('.panners-block')
 
-    bannersBlock.forEach(bannerBlock => {
-        const banners = bannerBlock.querySelector('.banners')
-        const bannersNavThumbs = bannerBlock.querySelector('.banners-nav-thumbs')
-        const bannersNavThumb = bannerBlock.querySelectorAll('.banners-nav-thumb')
-        const bannersNavPrev = bannerBlock.querySelector('.banners-prev')
-        const bannersNavNext = bannerBlock.querySelector('.banners-next')
+    pannersBlock.forEach(pannerBlock => {
+        const panners = pannerBlock.querySelector('.panners')
+        const pannersNavThumbs = pannerBlock.querySelector('.panners-nav-thumbs')
+        const pannersNavThumb = pannerBlock.querySelectorAll('.panners-nav-thumb')
+        const pannersNavPrev = pannerBlock.querySelector('.panners-prev')
+        const pannersNavNext = pannerBlock.querySelector('.panners-next')
 
-        const bannersSwiper = new Swiper(banners, {
+        const pannersSwiper = new Swiper(panners, {
             slidesPerView: 1,
             speed: 800,
             navigation: {
-                prevEl: bannersNavPrev,
-                nextEl: bannersNavNext
+                prevEl: pannersNavPrev,
+                nextEl: pannersNavNext
             },
             autoplay: {
                 delay: 3000,
@@ -54,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
 
-        const bannersNavThumbsSwiper = new Swiper(bannersNavThumbs, {
+        const pannersNavThumbsSwiper = new Swiper(pannersNavThumbs, {
             slidesPerView: 3,
             speed: 800,
             allowTouchMove: false,
@@ -71,20 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
 
-        bannersNavThumb.forEach((navItem, navIndex) => {
+        pannersNavThumb.forEach((navItem, navIndex) => {
             navItem.addEventListener('click', e => {
                 if (!navItem.classList.contains('active')) {
-                    bannersNavThumb.forEach(item => item.classList.remove('active'))
+                    pannersNavThumb.forEach(item => item.classList.remove('active'))
                     navItem.classList.add('active')
-                    bannersSwiper.slideTo(navIndex)
+                    pannersSwiper.slideTo(navIndex)
                 }
             })
         })
 
-        bannersSwiper.on('slideChange', () => {
-            const index = bannersSwiper.activeIndex
-            bannersNavThumbsSwiper.slideTo(index)
-            bannersNavThumb.forEach((item, thumbIndex) => {
+        pannersSwiper.on('slideChange', () => {
+            const index = pannersSwiper.activeIndex
+            pannersNavThumbsSwiper.slideTo(index)
+            pannersNavThumb.forEach((item, thumbIndex) => {
                 if (thumbIndex === index) {
                     item.classList.add('active')
                 } else {
@@ -217,6 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     openPopupLinks.forEach(popupLink => {
         popupLink.addEventListener('click', e => {
             e.preventDefault()
+            e.stopPropagation()
             const id = popupLink.getAttribute('href')
             openPopup(id)
         })
@@ -261,11 +261,13 @@ document.addEventListener('DOMContentLoaded', () => {
     mobMenuBtn.addEventListener('click', () => {
         mobMenuBtn.classList.toggle('active')
         mobMenu.classList.toggle('opened')
+        document.querySelector('.header').classList.toggle('menu-is-opened')
     })
 
     function closeMobMenu () {
         mobMenuBtn.classList.remove('active')
         mobMenu.classList.remove('opened')
+        document.querySelector('.header').remove.toggle('menu-is-opened')
     }
 
     const phone = document.querySelectorAll('.phone-mask')
@@ -318,6 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const gallery = document.querySelectorAll('.gallery-slider')
+    const galleryImg = document.querySelectorAll('.product-gallery-img')
 
     gallery.forEach(galleryItem => {
         const prev = galleryItem.querySelector('.gallery-prev')
@@ -354,6 +357,13 @@ document.addEventListener('DOMContentLoaded', () => {
             counter.innerHTML = `${index + 1}/${slidesLength}`
         })
 
+        galleryImg.forEach((galleryImgItem, galleryImgIndex) => {
+            galleryImgItem.addEventListener('click', () => {
+                gallerySlider.slideTo(galleryImgIndex)
+                openPopup('#gallery')
+            })
+        })
+
     })
 
     ymaps.ready(initProjectMap)
@@ -369,6 +379,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 searchControlProvider: 'yandex#search'
             });
 
+            projectMap.behaviors.disable('scrollZoom')
+            projectMap.behaviors.disable('multiTouch')
+
             const projectMapLabel = new ymaps.Placemark(coordinates, {}, {
                 iconLayout: 'default#image',
                 iconImageHref: 'images/dist/icons/map-marker.svg',
@@ -378,6 +391,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
             projectMap.geoObjects.add(projectMapLabel)
         }
+
+        const contactsMap = document.querySelectorAll('.contacts-map-container')
+
+        contactsMap.forEach(contactMap => {
+            const contactMapCoordinates = contactMap.getAttribute('data-coordinates').split(', ').map(item => parseFloat(item))
+            const contactMapObject = new ymaps.Map(contactMap, {
+                center: contactMapCoordinates,
+                zoom: 15,
+                duration: 1000,
+                controls: []
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            contactMapObject.behaviors.disable('scrollZoom')
+            contactMapObject.behaviors.disable('multiTouch')
+
+            const contactMapLabel = new ymaps.Placemark(contactMapCoordinates, {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'images/dist/icons/map-marker.svg',
+                iconImageSize: [42, 60],
+                iconImageOffset: [-21 -30],
+            })
+
+            contactMapObject.geoObjects.add(contactMapLabel)
+        })
+
     }
 
     const scrollTo = document.querySelectorAll('.scroll-to')
@@ -406,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const roomGalleryPrev = roomGalleryPopup.querySelector('.gallery-prev')
         const roomGalleryNext = roomGalleryPopup.querySelector('.gallery-next')
         const roomGallery = roomGalleryPopup.querySelector('.room-gallery-slider')
-        const roomView = document.querySelectorAll('.room-photo-view')
+        const roomView = document.querySelectorAll('.rooms-table-tr')
 
         const roomGallerySlider = new Swiper(roomGallery, {
             slidesPerView: 1,
@@ -455,13 +495,13 @@ document.addEventListener('DOMContentLoaded', () => {
         styleSelect(select)
     })
 
-    const newsBanners = document.querySelectorAll('.news-banners')
+    const newspanners = document.querySelectorAll('.news-panners')
 
-    newsBanners.forEach(newsBanner => {
-        const prev = newsBanner.querySelector('.banners-prev')
-        const next = newsBanner.querySelector('.banners-next')
+    newspanners.forEach(newspanner => {
+        const prev = newspanner.querySelector('.panners-prev')
+        const next = newspanner.querySelector('.panners-next')
 
-        const newsBannerSlider = new Swiper(newsBanner, {
+        const newspannerSlider = new Swiper(newspanner, {
             slidesPerView: 1,
             speed: 800,
             navigation: {
@@ -474,10 +514,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const imgSliders = document.querySelectorAll('.img-slider')
 
     imgSliders.forEach(imgSlider => {
-        const prev = imgSlider.querySelector('.banners-prev')
-        const next = imgSlider.querySelector('.banners-next')
+        const prev = imgSlider.querySelector('.panners-prev')
+        const next = imgSlider.querySelector('.panners-next')
 
-        const newsBannerSlider = new Swiper(imgSlider, {
+        const newspannerSlider = new Swiper(imgSlider, {
             slidesPerView: 1,
             speed: 800,
             navigation: {
@@ -508,7 +548,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     svg.hasAttribute('height') &&
                     svg.hasAttribute('width')
                 ) {
-                    svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
+                    svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('width') + ' ' + svg.getAttribute('height'))
                 }
                 element.parentElement.replaceChild(svg, element)
             }

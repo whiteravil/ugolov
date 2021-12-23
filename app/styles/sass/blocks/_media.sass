@@ -251,9 +251,11 @@
     margin-right: 40px
 
   .main-menu
+    li
+      margin-right: 20px
+
     a
       font-size: 14px
-      margin-right: 20px
 
   .wrapper
     padding-top: 80px
@@ -264,7 +266,7 @@
   h2, .h2
     font-size: 36px
 
-  .banner
+  .panner
     height: 655px
 
   section
@@ -399,6 +401,23 @@
     .news-slider
       max-width: calc(100vw - 150px)
 
+  .contacts-map-container
+    height: 400px
+
+  .contacts-info-block
+    p
+      font-size: 20px
+
+  .s-second-map
+    padding-bottom: 70px
+
+    .callback-form-block
+      margin-top: 50px
+      padding-top: 50px
+
+  .callback-form-block-right
+    padding-top: 42px
+
 
 @media (max-width: 1365.98px)
   h1, .h1
@@ -408,7 +427,7 @@
     font-size: 30px
 
   .logo
-    img
+    img, svg
       width: 130px
 
   .header-logo
@@ -421,14 +440,14 @@
       font-size: 14px
       margin-right: 15px
 
-  .banners-nav-thumb
+  .panners-nav-thumb
     font-size: 16px
 
     span
       margin-right: 15px
       font-size: 36px
 
-  .s-banners
+  .s-panners
     padding-bottom: 35px
 
   .s-our-objects
@@ -452,6 +471,7 @@
   .service-icon
     width: 50px
     height: 30px
+
     span
       font-size: 30px
 
@@ -505,15 +525,15 @@
     span
       font-size: 45px
 
-  .banners-next,
-  .banners-prev
+  .panners-next,
+  .panners-prev
     font-size: 28px
     bottom: 32px
 
-  .banners-prev
+  .panners-prev
     right: 81px
 
-  .banners-nav-thumbs
+  .panners-nav-thumbs
     padding-right: 128px
 
   .form-success-title-icon
@@ -566,11 +586,11 @@
   .room-gallery-slider
     width: 70%
 
-  .news-banner
+  .news-panner
     min-height: 420px
     padding: 30px
 
-  .s-news-banners
+  .s-news-panners
     padding-bottom: 35px
 
   .pagination
@@ -664,14 +684,18 @@
 
 
   .main-menu
-    flex-direction: column
     margin-bottom: 28px
-    align-items: flex-start
     flex-grow: 1
+
+    ul
+      flex-direction: column
+      align-items: flex-start
+
+    li
+      margin: 0 0 28px
 
     a
       font-size: 18px
-      margin: 0 0 28px
 
   .mob-menu-footer
     display: block
@@ -685,9 +709,12 @@
     .soc
       margin-top: 13px
 
+      ul
+        li
+          margin: 0 12px 0 0
+
     .soc-link
       font-size: 22px
-      margin: 0 12px 0 0
 
     .btn
       margin-top: 28px
@@ -747,14 +774,14 @@
       opacity: 0
       transform: scale(0)
 
-  .banner
+  .panner
     padding: 40px
     height: 500px
 
   .h1, h1
     margin-bottom: 30px
 
-  .banners-nav-thumbs
+  .panners-nav-thumbs
     .swiper-slide-next
       & + .swiper-slide
         opacity: 0
@@ -842,15 +869,35 @@
     padding-top: 20px
 
   .img-slider
-    .banners-prev,
-    .banners-next
+    .panners-prev,
+    .panners-next
       bottom: 19px
 
-    .banners-next
+    .panners-next
       right: 20px
 
-    .banners-prev
+    .panners-prev
       right: 66px
+
+  .contacts-info-block
+    p
+      font-size: 18px
+
+  .s-contacts-main-img
+    height: 460px
+
+  body
+    &.header-light
+      .header
+        &:not(.fixed):not(.menu-is-opened)
+          .header-menu-btn
+            &:before
+              color: #fff
+
+          .main-menu
+            a
+              color: $text
+
 
 @media (max-width: 991.98px)
   .container
@@ -1129,11 +1176,6 @@
       margin-right: 20px
       text-align: left
 
-  .gallery-pagination,
-  .gallery-next,
-  .gallery-prev
-    display: none
-
   .gallery-slider,
   .room-gallery-slider
     width: calc(100% - 40px)
@@ -1185,12 +1227,81 @@
       border-top-width: 1px
       border-bottom-width: 1px
 
+  .gallery-pagination
+    left: 0
+    font-size: 12px
+    top: 120%
+
+  .gallery-next
+    right: 0
+    width: 50px
+    height: 50px
+
+    &:before
+      font-size: 17px
+      transform: translateX(1px)
+
+  .gallery-prev
+    right: 60px
+    width: 36px
+    height: 36px
+    top: calc(109% + 7px)
+
+    &:before
+      font-size: 12px
+
+  .gallery-current-slide-title
+    margin-right: 10px
+
+  .s-breadcrumbs
+    margin-left: -20px
+    margin-right: -20px
+    padding-left: 20px
+    padding-right: 20px
+    display: flex
+    align-items: center
+    overflow: auto hidden
+
+    .container
+      width: auto
+      max-width: none
+      flex-grow: 1
+
+    &::-webkit-scrollbar
+      display: none
+
+  .contacts-info-block
+    width: 50% !important
+    margin-bottom: 20px
+
+  .s-contacts-main
+    padding: 80px 0 30px
+
+  .contacts-map-container
+    height: 300px
+
+  .s-contacts-main-img
+    height: 350px
+
+  .s-second-map
+    .callback-form-block
+      padding-top: 40px
+      margin-top: 20px
+      display: block
+
+  .callback-form-block-left
+    width: 100%
+    margin: 0 0 30px
+
+  .callback-form-block-right
+    width: 100%
+    padding-top: 0
 
 @media (max-width: 767.98px)
   body
-    font-size: 12px
+    font-size: 14px
 
-  .banner
+  .panner
     padding: 19px 23px
 
   h1, .h1
@@ -1201,20 +1312,20 @@
     font-size: 18px
     margin-bottom: 19px
 
-  .banner-content
+  .panner-content
     p
-      font-size: 12px
+      font-size: 14px
 
-  .banner
+  .panner
     height: 407px
 
-  .banners-nav-thumbs
+  .panners-nav-thumbs
     padding-right: 70px
 
     .swiper-slide-next
       opacity: 0
 
-  .banners-nav-thumb
+  .panners-nav-thumb
     padding: 12px 0
     font-size: 12px
 
@@ -1225,15 +1336,15 @@
     &:after
       height: 2px
 
-  .banners-prev,
-  .banners-next
+  .panners-prev,
+  .panners-next
     font-size: 22px
     bottom: 17px
 
-  .banners-next
+  .panners-next
     right: 21px
 
-  .banners-prev
+  .panners-prev
     right: 56px
 
   .section-title
@@ -1269,13 +1380,13 @@
       font-size: 12px
       margin-bottom: 10px
 
-  .banners-nav-thumb
+  .panners-nav-thumb
     max-width: 240px
 
     &:after
       display: none
 
-  .banners-nav-thumbs
+  .panners-nav-thumbs
     &:after
       background-color: #fff
       height: 2px
@@ -1297,12 +1408,38 @@
   .product-characters-sidebar-item-icon
     margin-right: 6px
 
+  .contacts-info-block
+    p
+      font-size: 16px
+
+  .callback-form-block-right
+    .form-content
+      > .form-checkbox
+        margin-right: 0
+        width: 100%
+        padding-top: 10px
+
+      > .form-submit
+        padding-top: 20px
+        width: 100%
+
+        .btn
+          width: 100%
+
+  .callback-form-block-left
+    .h6
+      font-size: 12px
+      margin-bottom: 5px
+
+  .s-second-map
+    padding: 40px 0
+
 @media (max-width: 575.98px)
   .header-row
     height: 51px
 
   .logo
-    img
+    img, svg
       width: 114px
 
   .header-callback
@@ -1330,6 +1467,8 @@
       overflow-y: auto
       flex-grow: 1
       padding: 39px 0 37px
+      display: flex
+      flex-direction: column
 
   .header-logo
     position: relative
@@ -1342,20 +1481,20 @@
     margin-left: 0
 
   .main-menu
-    a
+    li
       margin-bottom: 19px
 
   .wrapper
     padding-top: 51px
 
-  .banners-nav-thumbs
+  .panners-nav-thumbs
     padding-left: 24px
 
     &:after
       left: 24px
       right: 24px
 
-  .s-banners
+  .s-panners
     padding-bottom: 15px
 
   .s-our-objects
@@ -1561,7 +1700,7 @@
     border-bottom: 1px solid rgba($dark, .3)
 
     .logo
-      img
+      img, svg
         width: 186px
 
   .footer-contacts
@@ -1572,13 +1711,16 @@
     .soc
       margin-top: 15px
 
+      ul
+        li
+          margin-right: 12px
+
   .footer-contacts-link
     font-size: 20px
     margin-bottom: 12px
 
   .soc-link
     font-size: 22px
-    margin-right: 12px
 
   .form-title
     margin-bottom: 38px
@@ -1701,27 +1843,27 @@
   .callback-main
     max-width: calc(100% - 41px)
 
-  .news-banner
+  .news-panner
     padding: 19px 23px
 
-  .news-banner-date
+  .news-panner-date
     font-size: 20px
 
     span
       font-size: 30px
 
-  .news-banner-title
+  .news-panner-title
     padding-right: 65px
 
     .h2
       font-size: 16px
 
-  .news-banners
-    .banners-next,
-    .banners-prev
+  .news-panners
+    .panners-next,
+    .panners-prev
       bottom: 18px
 
-  .news-banner
+  .news-panner
     min-height: 300px
 
   .events
@@ -1793,8 +1935,10 @@
     .news-slider
       max-width: none
       width: 100%
+
       .slider-prev
         bottom: calc(100% + 20px)
+
       .slider-next
         bottom: calc(100% + 16px)
 
@@ -1811,5 +1955,19 @@
   .service-icon
     svg
       fill: $accent !important
+
       path
         fill: $accent !important
+
+  .s-contacts-main
+    padding-top: 51px
+
+  .contacts-info-block
+    .h6
+      font-size: 12px
+
+    p
+      font-size: 14px
+
+    .soc
+      margin-top: 0
