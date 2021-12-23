@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeMobMenu () {
         mobMenuBtn.classList.remove('active')
         mobMenu.classList.remove('opened')
-        document.querySelector('.header').remove('menu-is-opened')
+        document.querySelector('.header').classList.remove('menu-is-opened')
     }
 
     const phone = document.querySelectorAll('.phone-mask')
