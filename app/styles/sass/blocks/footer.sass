@@ -31,17 +31,20 @@
       opacity: 1
 
 .footer-nav
-  width: 16.66666%
+  width: 33.333333%
 
   nav
     ul
       list-style-type: none
       padding: 0
       margin: 0
+      column-count: 2
 
       li
         margin-bottom: 26px
-
+        page-break-inside: avoid
+        break-inside: avoid
+        flex-shrink: 0
         &:last-child
           margin-bottom: 0
 
@@ -102,8 +105,20 @@
   +tr
   color: $accent
 
+  svg
+    width: 32px
+    height: 32px
+
+    path
+      +tr
+      fill: $accent
+
   &:hover
     color: $text
+
+    svg
+      path
+        fill: $text
 
   &:last-child
     margin-right: 0

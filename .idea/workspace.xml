@@ -23,11 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/parts/soc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/service-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parts/header/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/parts/header/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/contacts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/contacts.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/post.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/post.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/services.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/services.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +55,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Goodbay/Работа/making-cash" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Goodbay/Работа/lamobile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\white\OneDrive\Рабочий стол\ugolov\app\styles\sass\blocks" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\white\OneDrive\Рабочий стол\ugolov\app\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\white\OneDrive\Рабочий стол\ugolov\app\styles\sass\blocks" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,7 +88,8 @@
       <workItem from="1640127276676" duration="746000" />
       <workItem from="1640128198011" duration="17000" />
       <workItem from="1640195018252" duration="11340000" />
-      <workItem from="1640284806667" duration="10861000" />
+      <workItem from="1640284806667" duration="11071000" />
+      <workItem from="1640367938988" duration="5347000" />
     </task>
     <servers />
   </component>
@@ -106,10 +117,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639510429351" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1640202062863">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1640378635568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1640202062863" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1640378635568" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1640211854987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -118,17 +129,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1640205480132" />
-    <state x="667" y="253" width="585" height="592" key="find.popup" timestamp="1640297798423">
+    <state x="667" y="253" width="585" height="592" key="find.popup" timestamp="1640378602701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="592" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1640297798423" />
+    <state x="667" y="253" width="585" height="592" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1640378602701" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1640122772111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1640122772111" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639933730868">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1640376195740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1639933730868" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1640376195740" />
   </component>
 </project>
