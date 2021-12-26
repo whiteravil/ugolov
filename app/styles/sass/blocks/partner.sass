@@ -1,0 +1,132 @@
+.s-partner
+  padding: 38px 0 147px
+  overflow: visible
+
+.partner-title
+  margin: 0 -10px 78px
+  display: flex
+
+  > *
+    width: 50%
+    padding: 0 10px
+    flex-shrink: 0
+
+  h1
+    margin: 0
+
+  p
+    margin: 13px 0 0
+    line-height: 1.6
+
+.partner-img
+  margin-bottom: 89px
+
+  img
+    display: block
+    width: 100%
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+
+.partner-content
+  display: flex
+  margin: 0 -10px
+
+.partner-content-text
+  padding: 0 10px
+  width: 75%
+  flex-shrink: 0
+
+.partner-content-right
+  padding: 0 10px
+  width: 25%
+  flex-shrink: 0
+
+.block
+  padding: 56px
+  border-radius: 5px
+  background-color: #EFF3F9
+  margin: 3.5rem 0
+
+  h3
+    margin-bottom: 2.5rem
+
+.partner-content-sidebar
+  position: sticky
+  top: 136px
+
+.partner-content-sidebar-main
+  margin-bottom: 60px
+  padding: 42px 39px 48px
+  border-radius: 5px
+  background-color: #EFF3F9
+
+.partner-content-sidebar-title
+  font-size: 28px
+  margin-bottom: 35px
+  line-height: 1.214
+  font-weight: 600
+
+.partner-content-sidebar-footer
+  p
+    padding-bottom: 32px
+    margin-bottom: 27px
+    line-height: 1.6
+    border-bottom: 1px solid #000
+
+  ul
+    padding: 0
+    margin: 0
+    list-style-type: none
+
+    li
+      margin-bottom: 20px
+      line-height: 1.1
+
+      &:last-child
+        margin-bottom: 0
+
+      a
+        display: flex
+        align-items: center
+        white-space: nowrap
+        color: $text
+        +tr
+
+        &[href*=mailto]
+          .val
+            position: relative
+
+            &:after
+              content: ''
+              position: absolute
+              bottom: 0
+              left: 0
+              width: 100%
+              height: 1px
+              background-color: $text
+              +tr
+
+        &:hover
+          color: $accent
+
+          .val
+            &:after
+              background-color: $accent
+
+        span:not(.val)
+          font-size: 15px
+          margin-right: 20px
+          transform: translateY(2px)
+
+.s-callback-2
+  padding: 102px 0 122px
+  background-image: url(../images/dist/invest-bg.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  color: #fff
+
+  .callback-form-block
+    display: flex

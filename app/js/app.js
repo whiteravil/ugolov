@@ -572,4 +572,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    const postContent = document.querySelector('.post-content')
+    const sPartner = document.querySelector('.s-partner')
+    const wrapper = document.querySelector('.wrapper')
+
+    if (postContent || sPartner) {
+        wrapper.classList.add('visible')
+    }
+
+    const accordion = document.querySelectorAll('.accordion-item')
+
+    accordion.forEach(accordionItem => {
+        const accordionItemTitle = accordionItem.querySelector('.accordion-item-header')
+        const accordionItemBody = accordionItem.querySelector('.accordion-item-body')
+
+        accordionItemTitle.addEventListener('click', () => {
+            const accordionItemBodyContent = accordionItemBody.querySelector('.accordion-item-body-content')
+            const accordionItemBodyContentH = accordionItemBodyContent.clientHeight
+
+            if (accordionItemTitle.classList.contains('active')) {
+                accordionItemTitle.classList.remove('active')
+                accordionItemBody.style.maxHeight = '0px'
+            } else {
+                accordionItemTitle.classList.add('active')
+                accordionItemBody.style.maxHeight = `${accordionItemBodyContentH}px`
+            }
+
+        })
+    })
+
 })
