@@ -404,10 +404,6 @@
   .s-rooms
     padding: 35px 0 70px
 
-  .text-block
-    blockquote
-      font-size: 50px
-
   .img-slide-content
     height: 565px
 
@@ -513,6 +509,13 @@
 
   .s-callback-2
     padding: 70px 0
+
+  .product-characters-sidebar-item-icon
+    transform: translateY(0px)
+    margin-right: 15px
+
+    .icon-ruble
+      transform: translateY(2px)
 
 
 @media (max-width: 1365.98px)
@@ -1519,6 +1522,19 @@
   .wrapper
     overflow: hidden !important
 
+  .status
+    &:after
+      top: 8px
+
+  sup
+    top: .6em
+
+  .text-block
+    blockquote
+      float: none
+      width: 100%
+
+
 @media (max-width: 767.98px)
   body
     font-size: 14px
@@ -1628,7 +1644,7 @@
       font-size: 14px
 
   .product-characters-sidebar-item-icon
-    margin-right: 6px
+    margin-right: 10px
 
   .contacts-info-block
     p
@@ -1654,7 +1670,7 @@
       margin-bottom: 5px
 
   .s-second-map
-    padding: 40px 0
+    padding: 0 0 40px
 
   .services-main
     height: 270px
@@ -2299,3 +2315,11 @@
     &:after
       left: 15px
       right: 15px
+
+  .partner-content-sidebar-footer ul li a span:not(.val)
+    -webkit-transform: translateY(1px)
+    -moz-transform: translateY(1px)
+    -ms-transform: translateY(1px)
+    -o-transform: translateY(1px)
+    transform: translateY(1px)
+    margin-right: 10px
