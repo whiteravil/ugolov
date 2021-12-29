@@ -64,6 +64,12 @@
   color: #fff
   cursor: pointer
   +tr
+  width: 46px
+  height: 46px
+  top: calc(109% + 9px)
+
+  &:hover:not(.swiper-button-disabled)
+    transform: scale(1.39)
 
   &.swiper-button-disabled
     opacity: .3
@@ -73,27 +79,22 @@
     font-weight: normal
     line-height: 1
     font-family: icon
+    font-size: 17px
 
 .gallery-next
-  width: 64px
-  height: 64px
   right: -6%
-  top: 109%
 
   &:before
     content: '\e90f'
-    font-size: 23px
-    transform: translateX(3px)
+    transform: translateX(1px)
 
 .gallery-prev
   width: 46px
   height: 46px
-  right: calc(-6% + 81px)
-  top: calc(109% + 9px)
+  right: calc(-6% + 70px)
 
   &:before
     content: '\e90e'
-    font-size: 17px
 
 #room-gallery
   .popup-block

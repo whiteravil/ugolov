@@ -24,14 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="31e5e33a-5187-4db6-bdd5-2249379e64ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/news-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_general.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/_media.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/contacts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/contacts.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/investments.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/investments.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/product.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/product.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sass/blocks/gallery.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sass/blocks/gallery.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,8 @@
       <workItem from="1640367938988" duration="5389000" />
       <workItem from="1640449505518" duration="11871000" />
       <workItem from="1640517137354" duration="5879000" />
-      <workItem from="1640727216316" duration="1211000" />
+      <workItem from="1640727216316" duration="1241000" />
+      <workItem from="1640819846354" duration="432000" />
     </task>
     <servers />
   </component>
@@ -126,10 +122,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1640205480132" />
-    <state x="667" y="253" width="585" height="592" key="find.popup" timestamp="1640728083083">
+    <state x="667" y="253" width="585" height="592" key="find.popup" timestamp="1640820058417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="592" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1640728083083" />
+    <state x="667" y="253" width="585" height="592" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1640820058417" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1640467140898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
