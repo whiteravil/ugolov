@@ -271,7 +271,8 @@ h3, .h3
       &:not(:last-child)
         margin-right: 30px
 
-.text-block
+.text-block,
+.post-content
   p
     margin-bottom: 2rem
     max-width: 1298px
@@ -279,7 +280,7 @@ h3, .h3
     & + h3
       margin-top: 4rem
 
-  *:last-child
+  *:not(.img-slider):last-child
     margin-bottom: 0
 
   h2, .h2

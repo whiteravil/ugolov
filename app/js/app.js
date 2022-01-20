@@ -601,4 +601,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+    const filterSubmitBtn = document.querySelectorAll('.catalog-filter-submit .btn')
+
+    filterSubmitBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filter.classList.remove('opened')
+        })
+    })
+
 })
