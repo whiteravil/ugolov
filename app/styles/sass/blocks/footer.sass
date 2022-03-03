@@ -126,3 +126,34 @@
 
   &:last-child
     margin-right: 0
+
+// 03.03.22 feat: copyright
+.footer-contacts-made-by
+  display: block
+  margin-top: 26px
+  opacity: .5
+  transition: opacity .3s ease
+  @media (max-width: 991.98px)
+    position: absolute
+    bottom: 20px
+    left: 20px
+
+  &:hover
+    opacity: 1
+    svg
+      fill: $accent
+  svg
+    width: 231px
+    height: auto
+    fill: #2E373B
+    transition: fill .3s ease
+
+.footer-policy
+  @media (max-width: 991.98px)
+    bottom: 70px !important
+
+.footer
+  @media (max-width: 991.98px)
+    padding: 45px 0 105px !important
+  @media (max-width: 575.98px)
+    padding: 45px 0 110px !important
